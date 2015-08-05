@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD5A56C1B727DF2009EA942 /* Memory.storyboard */; };
 		ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA170EA1B7192BC009E29CE /* NamingViewController.swift */; };
 		ECA170F01B719A2F009E29CE /* porco.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170ED1B719A2F009E29CE /* porco.png */; };
 		ECA170F11B719A2F009E29CE /* cavalo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EE1B719A2F009E29CE /* cavalo.png */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CAD5A56C1B727DF2009EA942 /* Memory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memory.storyboard; sourceTree = "<group>"; };
 		ECA170EA1B7192BC009E29CE /* NamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
 		ECA170ED1B719A2F009E29CE /* porco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco.png; sourceTree = "<group>"; };
 		ECA170EE1B719A2F009E29CE /* cavalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavalo.png; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CAD5A56B1B727DC2009EA942 /* MemoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5A56C1B727DF2009EA942 /* Memory.storyboard */,
+			);
+			name = MemoryTest;
+			sourceTree = "<group>";
+		};
 		ECA170EC1B719A20009E29CE /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		ECCC1EC91B712E51009484E7 /* TesteDiagnostico */ = {
 			isa = PBXGroup;
 			children = (
+				CAD5A56B1B727DC2009EA942 /* MemoryTest */,
 				ECA170EC1B719A20009E29CE /* Images */,
 				ECFED3971B71916200AA9A21 /* NamingTest */,
 				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCC1ED51B712E51009484E7 /* Main.storyboard in Resources */,
+				CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */,
 				ECA170F21B719A2F009E29CE /* canguru.png in Resources */,
 				ECA170F11B719A2F009E29CE /* cavalo.png in Resources */,
 				ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */,
