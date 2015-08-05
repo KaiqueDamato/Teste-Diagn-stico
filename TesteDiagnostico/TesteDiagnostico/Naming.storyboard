@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AhL-eB-z2r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Naming View Controller-->
+        <scene sceneID="bix-1X-EMX">
+            <objects>
+                <viewController id="AhL-eB-z2r" customClass="NamingViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lRM-eA-OYA"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUz-xI-24j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mfu-G1-A9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IdL-jT-Fup">
+                                <rect key="frame" x="196" y="28" width="208" height="208"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="mG6-gd-fGu"/>
+                                    <constraint firstAttribute="height" constant="208" id="pZo-ty-dZ2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-TP-Q5l">
+                                <rect key="frame" x="409" y="374" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Errado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wrongAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="JxD-zr-k4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-xV-XvP">
+                                <rect key="frame" x="115" y="374" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Certo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="pmO-l0-RUX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="IdL-jT-Fup" secondAttribute="centerX" id="5Vq-uA-LTE"/>
+                            <constraint firstAttribute="centerY" secondItem="IdL-jT-Fup" secondAttribute="centerY" constant="168" id="Ima-Cr-rad"/>
+                            <constraint firstAttribute="centerX" secondItem="ymy-xV-XvP" secondAttribute="centerX" constant="166" id="O4E-sw-XTg"/>
+                            <constraint firstAttribute="centerY" secondItem="NpR-TP-Q5l" secondAttribute="centerY" constant="-89" id="Rhu-Hf-zZh"/>
+                            <constraint firstAttribute="centerY" secondItem="ymy-xV-XvP" secondAttribute="centerY" constant="-89" id="n4T-wx-iVk"/>
+                            <constraint firstAttribute="centerX" secondItem="NpR-TP-Q5l" secondAttribute="centerX" constant="-132" id="urr-RC-85m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalImageView" destination="IdL-jT-Fup" id="1mb-Gp-s9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCI-zm-MJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="387"/>
+        </scene>
+    </scenes>
+</document>

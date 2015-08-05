@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../NamingViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:TesteDiagnostico.xcodeproj">
    </FileRef>
 </Workspace>
