@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */; };
+		A2F938B51B719842008BC857 /* VSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938B41B719842008BC857 /* VSPoint.swift */; };
+		A2F938B71B719842008BC857 /* VS1Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938B61B719842008BC857 /* VS1Exercise.swift */; };
+		A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */; };
+		A2F938BF1B719BCD008BC857 /* VSPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */; };
+		A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938C01B725BDB008BC857 /* VSViewController.swift */; };
+		A2F938D51B73968F008BC857 /* VS1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938D41B73968F008BC857 /* VS1View.swift */; };
 		ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */; };
 		ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */; };
 		ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ED11B712E51009484E7 /* ViewController.swift */; };
@@ -27,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisuospatialExecutive.storyboard; sourceTree = "<group>"; };
+		A2F938B41B719842008BC857 /* VSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPoint.swift; sourceTree = "<group>"; };
+		A2F938B61B719842008BC857 /* VS1Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1Exercise.swift; sourceTree = "<group>"; };
+		A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1ExerciseExtension.swift; sourceTree = "<group>"; };
+		A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPointExtension.swift; sourceTree = "<group>"; };
+		A2F938C01B725BDB008BC857 /* VSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSViewController.swift; sourceTree = "<group>"; };
+		A2F938D41B73968F008BC857 /* VS1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1View.swift; sourceTree = "<group>"; };
 		ECCC1EC71B712E51009484E7 /* TesteDiagnostico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteDiagnostico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCC1ECB1B712E51009484E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +93,15 @@
 		ECCC1EC91B712E51009484E7 /* TesteDiagnostico */ = {
 			isa = PBXGroup;
 			children = (
+				A2F938B61B719842008BC857 /* VS1Exercise.swift */,
+				A2F938B41B719842008BC857 /* VSPoint.swift */,
+				A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */,
+				A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */,
 				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
 				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
+				A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */,
+				A2F938D41B73968F008BC857 /* VS1View.swift */,
+				A2F938C01B725BDB008BC857 /* VSViewController.swift */,
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
 				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
 				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
@@ -197,6 +218,7 @@
 			files = (
 				ECCC1ED51B712E51009484E7 /* Main.storyboard in Resources */,
 				ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */,
+				A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */,
 				ECCC1ED71B712E51009484E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,8 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */,
+				A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
 				ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */,
+				A2F938B71B719842008BC857 /* VS1Exercise.swift in Sources */,
+				A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */,
+				A2F938BF1B719BCD008BC857 /* VSPointExtension.swift in Sources */,
+				A2F938B51B719842008BC857 /* VSPoint.swift in Sources */,
+				A2F938D51B73968F008BC857 /* VS1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,7 @@
 				ECCC1EEB1B712E51009484E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECCC1EEC1B712E51009484E7 /* Build configuration list for PBXNativeTarget "TesteDiagnosticoTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +452,7 @@
 				ECCC1EEE1B712E51009484E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
