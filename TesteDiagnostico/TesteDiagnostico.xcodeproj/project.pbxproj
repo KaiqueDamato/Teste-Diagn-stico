@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD5A56C1B727DF2009EA942 /* Memory.storyboard */; };
+		EC8CD5CF1B75251100151EE9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */; };
+		EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */; };
+		EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E91B73A9930056C733 /* OCInspectableView.swift */; };
+		EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */; };
 		ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA170EA1B7192BC009E29CE /* NamingViewController.swift */; };
 		ECA170F01B719A2F009E29CE /* porco.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170ED1B719A2F009E29CE /* porco.png */; };
 		ECA170F11B719A2F009E29CE /* cavalo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EE1B719A2F009E29CE /* cavalo.png */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		CAD5A56C1B727DF2009EA942 /* Memory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memory.storyboard; sourceTree = "<group>"; };
+		EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM1ExerciseExtension.swift; sourceTree = "<group>"; };
+		EC9926E91B73A9930056C733 /* OCInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCInspectableView.swift; sourceTree = "<group>"; };
+		EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM1ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		ECA170EA1B7192BC009E29CE /* NamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
 		ECA170ED1B719A2F009E29CE /* porco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco.png; sourceTree = "<group>"; };
 		ECA170EE1B719A2F009E29CE /* cavalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavalo.png; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8CD5CF1B75251100151EE9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				CAD5A56C1B727DF2009EA942 /* Memory.storyboard */,
+				EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */,
+				EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */,
 			);
 			name = MemoryTest;
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 		ECCC1EBE1B712E51009484E7 = {
 			isa = PBXGroup;
 			children = (
+				EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */,
 				ECCC1EC91B712E51009484E7 /* TesteDiagnostico */,
 				ECCC1EE21B712E51009484E7 /* TesteDiagnosticoTests */,
 				ECCC1EC81B712E51009484E7 /* Products */,
@@ -122,6 +134,7 @@
 		ECCC1ECA1B712E51009484E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC9926E91B73A9930056C733 /* OCInspectableView.swift */,
 				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
 				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
 				ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */,
@@ -206,6 +219,7 @@
 				TargetAttributes = {
 					ECCC1EC61B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 66BPT5DT27;
 					};
 					ECCC1EDE1B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
@@ -263,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */,
+				EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */,
+				EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
+				EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */,
 				ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */,
 				ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */,
 			);
@@ -394,9 +411,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TesteDiagnostico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -404,9 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TesteDiagnostico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

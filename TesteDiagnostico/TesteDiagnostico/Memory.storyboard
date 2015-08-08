@@ -1,7 +1,480 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZQL-75-hgZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Memory-->
+        <scene sceneID="WkJ-MB-k5o">
+            <objects>
+                <tableViewController id="J7T-6e-khL" customClass="MM1ExerciseTableViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0HY-9N-zO9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="m7J-qs-HIe">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="350" id="pbY-cW-iy1">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pbY-cW-iy1" id="SNR-cQ-cfD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhJ-hY-oSa" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="170" y="8" width="260" height="260"/>
+                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="260" id="9r8-pe-1z0"/>
+                                                        <constraint firstAttribute="width" constant="260" id="BPP-N8-cgT"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="130"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="textToSpeech:" destination="J7T-6e-khL" eventType="touchUpInside" id="4Ds-cC-Cve"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="zhJ-hY-oSa" secondAttribute="centerY" id="9yB-PW-0NR"/>
+                                                <constraint firstItem="zhJ-hY-oSa" firstAttribute="top" secondItem="SNR-cQ-cfD" secondAttribute="topMargin" id="LfO-yp-KD8"/>
+                                                <constraint firstAttribute="centerX" secondItem="zhJ-hY-oSa" secondAttribute="centerX" id="pXR-jr-PQk"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9yB-PW-0NR"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="s4C-uj-4Il">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s4C-uj-4Il" id="iRs-PV-tzG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-Pn-ZGl" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="12" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="F5b-qW-yyg"/>
+                                                        <constraint firstAttribute="height" constant="60" id="o8R-yA-byI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="F5b-qW-yyg"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="m5a-Tu-T6P"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-d1-x0M" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="aSa-TV-syf"/>
+                                                        <constraint firstAttribute="height" constant="40" id="oEL-eJ-fse"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="7g8-pK-VVI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="top" secondItem="jiK-Pn-ZGl" secondAttribute="bottom" constant="-49" id="9fr-mk-cbB"/>
+                                                <constraint firstItem="jiK-Pn-ZGl" firstAttribute="trailing" secondItem="iRs-PV-tzG" secondAttribute="trailingMargin" id="AJJ-o1-yQx"/>
+                                                <constraint firstAttribute="centerX" secondItem="jiK-Pn-ZGl" secondAttribute="centerX" id="Ln6-mR-OBZ"/>
+                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="leading" secondItem="jiK-Pn-ZGl" secondAttribute="trailing" constant="-62" id="W8U-gF-Zxc"/>
+                                                <constraint firstAttribute="centerY" secondItem="jiK-Pn-ZGl" secondAttribute="centerY" id="gm6-aS-Kox"/>
+                                                <constraint firstItem="jiK-Pn-ZGl" firstAttribute="leading" secondItem="iRs-PV-tzG" secondAttribute="leadingMargin" id="iVF-Ob-sgo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Noq-ht-8Z8">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Noq-ht-8Z8" id="m4F-NZ-CWy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MO-GU-ZCc" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="13" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="JRN-9b-cQP"/>
+                                                        <constraint firstAttribute="height" constant="60" id="vPo-oW-RSw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="JRN-9b-cQP"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="LA7-e7-ZE0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-bM-HUf" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="JzB-nt-Zxx"/>
+                                                        <constraint firstAttribute="height" constant="40" id="KXq-eU-xKO"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="fcW-OA-vK6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="8MO-GU-ZCc" secondAttribute="centerY" id="6il-ia-kdS"/>
+                                                <constraint firstItem="qZF-bM-HUf" firstAttribute="leading" secondItem="8MO-GU-ZCc" secondAttribute="trailing" constant="-62" id="Hu6-YW-z80"/>
+                                                <constraint firstItem="8MO-GU-ZCc" firstAttribute="top" secondItem="qZF-bM-HUf" secondAttribute="bottom" constant="-50" id="IzR-zV-j4Z"/>
+                                                <constraint firstAttribute="centerX" secondItem="8MO-GU-ZCc" secondAttribute="centerX" id="MDP-Vi-mIy"/>
+                                                <constraint firstItem="8MO-GU-ZCc" firstAttribute="trailing" secondItem="m4F-NZ-CWy" secondAttribute="trailingMargin" id="SaQ-U7-JOJ"/>
+                                                <constraint firstItem="8MO-GU-ZCc" firstAttribute="leading" secondItem="m4F-NZ-CWy" secondAttribute="leadingMargin" id="ZIL-R3-pmK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Psp-MT-qs1">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Psp-MT-qs1" id="SDf-N6-Ixv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX0-32-QNx" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="13" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="CtN-Vu-008"/>
+                                                        <constraint firstAttribute="height" constant="60" id="fEh-Sz-t0g"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="CtN-Vu-008"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="KMa-gX-bB8"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50E-vu-XgZ" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="9C7-Al-7hx"/>
+                                                        <constraint firstAttribute="height" constant="40" id="a0a-bd-uGJ"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="Ln9-JK-283"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="GX0-32-QNx" firstAttribute="leading" secondItem="SDf-N6-Ixv" secondAttribute="leadingMargin" id="O47-L0-02A"/>
+                                                <constraint firstItem="50E-vu-XgZ" firstAttribute="leading" secondItem="GX0-32-QNx" secondAttribute="trailing" constant="-62" id="SUm-Xo-bGv"/>
+                                                <constraint firstAttribute="centerY" secondItem="GX0-32-QNx" secondAttribute="centerY" id="Zid-YC-oGL"/>
+                                                <constraint firstAttribute="centerX" secondItem="GX0-32-QNx" secondAttribute="centerX" id="cyk-dn-gGT"/>
+                                                <constraint firstItem="GX0-32-QNx" firstAttribute="top" secondItem="50E-vu-XgZ" secondAttribute="bottom" constant="-49.5" id="oDr-Tl-Hcl"/>
+                                                <constraint firstItem="GX0-32-QNx" firstAttribute="trailing" secondItem="SDf-N6-Ixv" secondAttribute="trailingMargin" id="t6x-QS-AUP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="BNH-Gg-T8j">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BNH-Gg-T8j" id="kNf-12-foi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqQ-dH-AoZ" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="13" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="QD1-dK-Y0h"/>
+                                                        <constraint firstAttribute="height" constant="60" id="hfZ-In-7AS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="QD1-dK-Y0h"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="WHK-H9-BXa"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmJ-pC-SVr" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="cp8-po-BHb"/>
+                                                        <constraint firstAttribute="height" constant="40" id="wQG-9e-iW1"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="bJH-uk-oKc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="yqQ-dH-AoZ" secondAttribute="centerX" id="Hmz-bY-jPk"/>
+                                                <constraint firstItem="yqQ-dH-AoZ" firstAttribute="trailing" secondItem="kNf-12-foi" secondAttribute="trailingMargin" id="OGL-bA-7lD"/>
+                                                <constraint firstAttribute="centerY" secondItem="yqQ-dH-AoZ" secondAttribute="centerY" id="caP-Xv-tuV"/>
+                                                <constraint firstItem="yqQ-dH-AoZ" firstAttribute="top" secondItem="XmJ-pC-SVr" secondAttribute="bottom" constant="-50" id="d27-kc-u9f"/>
+                                                <constraint firstItem="XmJ-pC-SVr" firstAttribute="leading" secondItem="yqQ-dH-AoZ" secondAttribute="trailing" constant="-62" id="qfx-cG-xXW"/>
+                                                <constraint firstItem="yqQ-dH-AoZ" firstAttribute="leading" secondItem="kNf-12-foi" secondAttribute="leadingMargin" id="vb6-ZE-HG0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="jMJ-fE-82b">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jMJ-fE-82b" id="BJv-4t-nz8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjX-bx-elo" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="13" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="OZ3-OH-hfR"/>
+                                                        <constraint firstAttribute="height" constant="60" id="mm7-Iy-bsh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="OZ3-OH-hfR"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="fmj-AO-95K"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rax-Ow-de5" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="0G1-GL-NSL"/>
+                                                        <constraint firstAttribute="height" constant="40" id="YuQ-LO-Sa0"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonTouched:" destination="J7T-6e-khL" eventType="touchUpInside" id="Hii-VP-TTf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="zjX-bx-elo" secondAttribute="centerX" id="AGF-fA-lwa"/>
+                                                <constraint firstItem="zjX-bx-elo" firstAttribute="leading" secondItem="BJv-4t-nz8" secondAttribute="leadingMargin" id="Bde-jP-IQN"/>
+                                                <constraint firstItem="zjX-bx-elo" firstAttribute="top" secondItem="Rax-Ow-de5" secondAttribute="bottom" constant="-50" id="HUD-Pz-yQd"/>
+                                                <constraint firstItem="zjX-bx-elo" firstAttribute="trailing" secondItem="BJv-4t-nz8" secondAttribute="trailingMargin" id="Lce-MM-6Xp"/>
+                                                <constraint firstItem="Rax-Ow-de5" firstAttribute="leading" secondItem="zjX-bx-elo" secondAttribute="trailing" constant="-62" id="g5c-qk-3TJ"/>
+                                                <constraint firstAttribute="centerY" secondItem="zjX-bx-elo" secondAttribute="centerY" id="y3S-wG-GKk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="VfE-fg-cqa">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VfE-fg-cqa" id="4aC-s3-t7M">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Zn-Vwr" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="72" width="584" height="60"/>
+                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="Ngb-0Q-bdP"/>
+                                                        <constraint firstAttribute="width" constant="584" id="uSI-ek-EJz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="PRÓXIMO">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="uSI-ek-EJz"/>
+                                                        </mask>
+                                                    </variation>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="dl7-Zn-Vwr" secondAttribute="centerX" id="BWR-Kb-HTN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dl7-Zn-Vwr" secondAttribute="trailing" id="Tat-k8-qOF"/>
+                                                <constraint firstItem="dl7-Zn-Vwr" firstAttribute="top" secondItem="4aC-s3-t7M" secondAttribute="topMargin" constant="125" id="XWP-C1-dng"/>
+                                                <constraint firstItem="dl7-Zn-Vwr" firstAttribute="leading" secondItem="4aC-s3-t7M" secondAttribute="leadingMargin" id="i1r-qA-hwv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dl7-Zn-Vwr" secondAttribute="bottom" constant="60" id="k2q-NW-RNc"/>
+                                                <constraint firstAttribute="centerY" secondItem="dl7-Zn-Vwr" secondAttribute="centerY" id="wpd-Ws-7dZ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="XWP-C1-dng"/>
+                                                    <exclude reference="wpd-Ws-7dZ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="J7T-6e-khL" id="IH4-Em-G30"/>
+                            <outlet property="delegate" destination="J7T-6e-khL" id="WEA-9V-r3z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Memory" id="LhD-St-4sn">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3He-PG-Old"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerFiveButton" destination="Rax-Ow-de5" id="p9w-gi-fK7"/>
+                        <outlet property="answerFourButton" destination="XmJ-pC-SVr" id="OGP-WW-TYt"/>
+                        <outlet property="answerOneButton" destination="n6z-d1-x0M" id="11j-My-guY"/>
+                        <outlet property="answerThreeButton" destination="50E-vu-XgZ" id="M4e-8u-9xi"/>
+                        <outlet property="answerTwoButton" destination="qZF-bM-HUf" id="XXJ-oU-vV0"/>
+                        <outlet property="nextButton" destination="dl7-Zn-Vwr" id="5wW-Bx-ZS0"/>
+                        <outlet property="wordFiveButton" destination="zjX-bx-elo" id="em0-dX-slV"/>
+                        <outlet property="wordFourButton" destination="yqQ-dH-AoZ" id="cuy-Ql-J9H"/>
+                        <outlet property="wordOneButton" destination="jiK-Pn-ZGl" id="nvj-Jt-fLR"/>
+                        <outlet property="wordThreeButton" destination="GX0-32-QNx" id="eRI-d0-QqF"/>
+                        <outlet property="wordTwoButton" destination="8MO-GU-ZCc" id="C7q-X8-LYZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfr-uV-jYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rwU-cd-j1D">
+            <objects>
+                <navigationController id="ZQL-75-hgZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GPG-XW-3wQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J7T-6e-khL" kind="relationship" relationship="rootViewController" id="1aU-ZS-11c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbE-32-NeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="413"/>
+        </scene>
+    </scenes>
 </document>
