@@ -21,6 +21,7 @@
 		ECCC1ED71B712E51009484E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCC1ED61B712E51009484E7 /* Images.xcassets */; };
 		ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */; };
 		ECCC1EE61B712E51009484E7 /* TesteDiagnosticoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1EE51B712E51009484E7 /* TesteDiagnosticoTests.swift */; };
+		ECFED3991B7191E600AA9A21 /* Naming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFED3981B7191E600AA9A21 /* Naming.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		ECCC1EDF1B712E51009484E7 /* TesteDiagnosticoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteDiagnosticoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCC1EE41B712E51009484E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCC1EE51B712E51009484E7 /* TesteDiagnosticoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteDiagnosticoTests.swift; sourceTree = "<group>"; };
+		ECFED3981B7191E600AA9A21 /* Naming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Naming.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8CD5CF1B75251100151EE9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +75,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CAD5A56B1B727DC2009EA942 /* MemoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5A56C1B727DF2009EA942 /* Memory.storyboard */,
+				EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */,
+				EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */,
+			);
+			name = MemoryTest;
+			sourceTree = "<group>";
+		};
+		ECA170EC1B719A20009E29CE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ECA170ED1B719A2F009E29CE /* porco.png */,
+				ECA170EE1B719A2F009E29CE /* cavalo.png */,
+				ECA170EF1B719A2F009E29CE /* canguru.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		ECCC1EBE1B712E51009484E7 = {
 			isa = PBXGroup;
 			children = (
+				EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */,
 				ECCC1EC91B712E51009484E7 /* TesteDiagnostico */,
 				ECCC1EE21B712E51009484E7 /* TesteDiagnosticoTests */,
 				ECCC1EC81B712E51009484E7 /* Products */,
@@ -103,9 +127,6 @@
 				A2F938D41B73968F008BC857 /* VS1View.swift */,
 				A2F938C01B725BDB008BC857 /* VSViewController.swift */,
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
-				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
-				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
-				ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */,
 				ECCC1ECA1B712E51009484E7 /* Supporting Files */,
 			);
 			path = TesteDiagnostico;
@@ -114,6 +135,11 @@
 		ECCC1ECA1B712E51009484E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC9926E91B73A9930056C733 /* OCInspectableView.swift */,
+				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
+				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
+				ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */,
+				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
 				ECCC1ECB1B712E51009484E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -134,6 +160,15 @@
 				ECCC1EE41B712E51009484E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECFED3971B71916200AA9A21 /* NamingTest */ = {
+			isa = PBXGroup;
+			children = (
+				ECFED3981B7191E600AA9A21 /* Naming.storyboard */,
+				ECA170EA1B7192BC009E29CE /* NamingViewController.swift */,
+			);
+			name = NamingTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +220,7 @@
 				TargetAttributes = {
 					ECCC1EC61B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 66BPT5DT27;
 					};
 					ECCC1EDE1B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
@@ -217,6 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCC1ED51B712E51009484E7 /* Main.storyboard in Resources */,
+				CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */,
+				ECA170F21B719A2F009E29CE /* canguru.png in Resources */,
+				ECA170F11B719A2F009E29CE /* cavalo.png in Resources */,
 				ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */,
 				A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */,
 				ECCC1ED71B712E51009484E7 /* Images.xcassets in Resources */,
@@ -240,6 +279,8 @@
 				ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */,
 				A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
+				EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */,
+				ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */,
 				ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */,
 				A2F938B71B719842008BC857 /* VS1Exercise.swift in Sources */,
 				A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */,
@@ -374,9 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TesteDiagnostico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -384,9 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TesteDiagnostico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
