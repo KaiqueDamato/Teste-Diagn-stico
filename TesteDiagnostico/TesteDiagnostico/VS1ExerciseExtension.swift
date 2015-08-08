@@ -22,12 +22,13 @@ extension VS1Exercise {
     }
     
     func addPoint(point: CGPoint) {
-        let vsPoint = VSPoint.pointWithCGPoint(point)
-        vsPoint?.exercise = self
+//        let vsPoint = VSPoint.pointWithCGPoint(point)
+//        vsPoint?.exercise = self
+        patientTouches.append(point)
     }
     
     func addPatientPoint(point: CGPoint) {
         let vsPoint = VSPoint.pointWithCGPoint(point)
-        vsPoint?.patientExercise = self
+//        vsPoint?.patientExercise = self
     }
 }

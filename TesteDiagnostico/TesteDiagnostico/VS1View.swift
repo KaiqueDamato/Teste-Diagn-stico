@@ -16,6 +16,8 @@ class VS1View: UIView {
         }
     }
     
+    var patientPoints = [CGPoint]()
+    
     override func drawRect(rect: CGRect) {
         if points != nil {
             if let count = points?.count {
@@ -27,6 +29,17 @@ class VS1View: UIView {
                 }
             }
         }
+        var path = UIBezierPath()
+        for point in patientPoints {
+            if point == patientPoints.first {
+                path.moveToPoint(point)
+            } else {
+                path.addLineToPoint(point)
+                println("Point = (\(point.x), \(point.y))")
+            }
+        }
+        path.stroke()
+        
     }
     
     func circleWithNumber(number: Int, atPoint point: CGPoint) -> UIBezierPath {

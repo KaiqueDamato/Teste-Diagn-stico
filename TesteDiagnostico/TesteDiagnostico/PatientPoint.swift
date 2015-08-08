@@ -1,5 +1,5 @@
 //
-//  VSPoint.swift
+//  PatientPoint.swift
 //  TesteDiagnostico
 //
 //  Created by Emannuel Fernandes de Oliveira Carvalho on 8/8/15.
@@ -9,11 +9,9 @@
 import Foundation
 import CoreData
 
-class VSPoint: NSManagedObject {
+class PatientPoint: NSManagedObject {
 
-    @NSManaged var radius: NSNumber
-    @NSManaged var x: NSNumber
-    @NSManaged var y: NSNumber
+    @NSManaged var point: String
     @NSManaged var exercise: VS1Exercise
 
 }

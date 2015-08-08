@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */; };
-		A2F938B51B719842008BC857 /* VSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938B41B719842008BC857 /* VSPoint.swift */; };
-		A2F938B71B719842008BC857 /* VS1Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938B61B719842008BC857 /* VS1Exercise.swift */; };
 		A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */; };
 		A2F938BF1B719BCD008BC857 /* VSPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */; };
 		A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938C01B725BDB008BC857 /* VSViewController.swift */; };
 		A2F938D51B73968F008BC857 /* VS1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938D41B73968F008BC857 /* VS1View.swift */; };
+		A2F938E21B75C307008BC857 /* VS1Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938E11B75C307008BC857 /* VS1Exercise.swift */; };
+		A2F938E41B75C308008BC857 /* PatientPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938E31B75C308008BC857 /* PatientPoint.swift */; };
+		A2F938E61B75C308008BC857 /* VSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938E51B75C308008BC857 /* VSPoint.swift */; };
+		CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD5A56C1B727DF2009EA942 /* Memory.storyboard */; };
+		EC8CD5CF1B75251100151EE9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */; };
+		EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */; };
+		EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E91B73A9930056C733 /* OCInspectableView.swift */; };
+		EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */; };
+		ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA170EA1B7192BC009E29CE /* NamingViewController.swift */; };
+		ECA170F01B719A2F009E29CE /* porco.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170ED1B719A2F009E29CE /* porco.png */; };
+		ECA170F11B719A2F009E29CE /* cavalo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EE1B719A2F009E29CE /* cavalo.png */; };
+		ECA170F21B719A2F009E29CE /* canguru.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EF1B719A2F009E29CE /* canguru.png */; };
 		ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */; };
 		ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */; };
 		ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ED11B712E51009484E7 /* ViewController.swift */; };
@@ -36,12 +46,22 @@
 
 /* Begin PBXFileReference section */
 		A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisuospatialExecutive.storyboard; sourceTree = "<group>"; };
-		A2F938B41B719842008BC857 /* VSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPoint.swift; sourceTree = "<group>"; };
-		A2F938B61B719842008BC857 /* VS1Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1Exercise.swift; sourceTree = "<group>"; };
 		A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1ExerciseExtension.swift; sourceTree = "<group>"; };
 		A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPointExtension.swift; sourceTree = "<group>"; };
 		A2F938C01B725BDB008BC857 /* VSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSViewController.swift; sourceTree = "<group>"; };
 		A2F938D41B73968F008BC857 /* VS1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1View.swift; sourceTree = "<group>"; };
+		A2F938E11B75C307008BC857 /* VS1Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VS1Exercise.swift; sourceTree = "<group>"; };
+		A2F938E31B75C308008BC857 /* PatientPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPoint.swift; sourceTree = "<group>"; };
+		A2F938E51B75C308008BC857 /* VSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPoint.swift; sourceTree = "<group>"; };
+		CAD5A56C1B727DF2009EA942 /* Memory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memory.storyboard; sourceTree = "<group>"; };
+		EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM1ExerciseExtension.swift; sourceTree = "<group>"; };
+		EC9926E91B73A9930056C733 /* OCInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCInspectableView.swift; sourceTree = "<group>"; };
+		EC9926EB1B73CF030056C733 /* MM1ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM1ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		ECA170EA1B7192BC009E29CE /* NamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
+		ECA170ED1B719A2F009E29CE /* porco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = porco.png; sourceTree = "<group>"; };
+		ECA170EE1B719A2F009E29CE /* cavalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavalo.png; sourceTree = "<group>"; };
+		ECA170EF1B719A2F009E29CE /* canguru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canguru.png; sourceTree = "<group>"; };
 		ECCC1EC71B712E51009484E7 /* TesteDiagnostico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteDiagnostico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCC1ECB1B712E51009484E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2F938DA1B75AD87008BC857 /* VisuoSpatialTest */ = {
+			isa = PBXGroup;
+			children = (
+				A2F938E51B75C308008BC857 /* VSPoint.swift */,
+				A2F938E31B75C308008BC857 /* PatientPoint.swift */,
+				A2F938E11B75C307008BC857 /* VS1Exercise.swift */,
+				A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */,
+				A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */,
+				A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */,
+				A2F938D41B73968F008BC857 /* VS1View.swift */,
+				A2F938C01B725BDB008BC857 /* VSViewController.swift */,
+			);
+			name = VisuoSpatialTest;
+			sourceTree = "<group>";
+		};
 		CAD5A56B1B727DC2009EA942 /* MemoryTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,15 +152,12 @@
 		ECCC1EC91B712E51009484E7 /* TesteDiagnostico */ = {
 			isa = PBXGroup;
 			children = (
-				A2F938B61B719842008BC857 /* VS1Exercise.swift */,
-				A2F938B41B719842008BC857 /* VSPoint.swift */,
-				A2F938BC1B719B0C008BC857 /* VS1ExerciseExtension.swift */,
-				A2F938BE1B719BCD008BC857 /* VSPointExtension.swift */,
 				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
+				A2F938DA1B75AD87008BC857 /* VisuoSpatialTest */,
+				CAD5A56B1B727DC2009EA942 /* MemoryTest */,
+				ECA170EC1B719A20009E29CE /* Images */,
+				ECFED3971B71916200AA9A21 /* NamingTest */,
 				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
-				A2F938AE1B7192FC008BC857 /* VisuospatialExecutive.storyboard */,
-				A2F938D41B73968F008BC857 /* VS1View.swift */,
-				A2F938C01B725BDB008BC857 /* VSViewController.swift */,
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
 				ECCC1ECA1B712E51009484E7 /* Supporting Files */,
 			);
@@ -139,7 +171,6 @@
 				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
 				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
 				ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */,
-				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
 				ECCC1ECB1B712E51009484E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -258,6 +289,8 @@
 				ECA170F11B719A2F009E29CE /* cavalo.png in Resources */,
 				ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */,
 				A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */,
+				ECA170F01B719A2F009E29CE /* porco.png in Resources */,
+				ECFED3991B7191E600AA9A21 /* Naming.storyboard in Resources */,
 				ECCC1ED71B712E51009484E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,14 +311,17 @@
 			files = (
 				ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */,
 				A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */,
+				A2F938E41B75C308008BC857 /* PatientPoint.swift in Sources */,
+				EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */,
+				EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
 				EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */,
+				A2F938E61B75C308008BC857 /* VSPoint.swift in Sources */,
+				A2F938E21B75C307008BC857 /* VS1Exercise.swift in Sources */,
 				ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */,
 				ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */,
-				A2F938B71B719842008BC857 /* VS1Exercise.swift in Sources */,
 				A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */,
 				A2F938BF1B719BCD008BC857 /* VSPointExtension.swift in Sources */,
-				A2F938B51B719842008BC857 /* VSPoint.swift in Sources */,
 				A2F938D51B73968F008BC857 /* VS1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

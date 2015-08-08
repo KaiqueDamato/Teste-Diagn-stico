@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PatientPoint" syncable="YES">
+    <entity name="PatientPoint" representedClassName="TesteDiagnostico.PatientPoint" syncable="YES">
         <attribute name="point" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VS1Exercise" inverseName="patientPoints" inverseEntity="VS1Exercise" syncable="YES"/>
     </entity>
@@ -16,8 +16,8 @@
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VS1Exercise" inverseName="points" inverseEntity="VS1Exercise" syncable="YES"/>
     </entity>
     <elements>
+        <element name="PatientPoint" positionX="178" positionY="-135" width="128" height="73"/>
         <element name="VS1Exercise" positionX="-108" positionY="-27" width="128" height="88"/>
         <element name="VSPoint" positionX="178" positionY="71" width="128" height="103"/>
-        <element name="PatientPoint" positionX="178" positionY="-135" width="128" height="73"/>
     </elements>
 </model>

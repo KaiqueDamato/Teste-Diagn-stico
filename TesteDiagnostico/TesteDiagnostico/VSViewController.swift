@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VSViewController: UIViewController {
+class VSViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var exercise: VS1Exercise?
 
@@ -17,19 +17,62 @@ class VSViewController: UIViewController {
     override func viewDidLoad() {
         exercise = VS1Exercise()
         exercise?.createPoints()
+        exerciseView.addGestureRecognizer(gestureRecognizer)
     }
+    
+    let strings = ["1", "A", "2", "B", "3", "C", "4", "D", "5", "E"]
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        if let points = exercise?.pointsArray {
+            for i in Range(0..<points.count) {
+                createLabelWithText(strings[i], atPoint: points[i])
+            }
+        }
     }
     
     func createLabelWithText(text: String, atPoint point: CGPoint) {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         label.center = point
+        label.text = text
+        label.layer.borderWidth = 2
+        label.layer.cornerRadius = 15
+        label.textAlignment = .Center
         view.addSubview(label)
     }
     
+    // MARK: - GestureRecognizer
+    
+    var gestureRecognizer = UIGestureRecognizer() {
+        didSet {
+            gestureRecognizer.delegate = self
+        }
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        // ...
+        println("Begaaaan")
+    }
+    
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        for t in touches {
+            if let touch = t as? UITouch {
+                let point = touch.locationInView(exerciseView)
+                exercise?.addPatientPoint(point)
+                exerciseView.patientPoints.append(point)
+                exerciseView.setNeedsDisplay()
+            }
+        }
+    }
+    
+    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+        println("Touches canceeeeled")
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        // ...
+        println("Endeeeed")
+    }
 
     /*
     // MARK: - Navigation
