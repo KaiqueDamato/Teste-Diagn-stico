@@ -97,9 +97,9 @@
                                                         <constraint firstAttribute="width" constant="40" id="aSa-TV-syf"/>
                                                         <constraint firstAttribute="height" constant="40" id="oEL-eJ-fse"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -162,9 +162,9 @@
                                                         <constraint firstAttribute="width" constant="40" id="JzB-nt-Zxx"/>
                                                         <constraint firstAttribute="height" constant="40" id="KXq-eU-xKO"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -227,9 +227,9 @@
                                                         <constraint firstAttribute="width" constant="40" id="9C7-Al-7hx"/>
                                                         <constraint firstAttribute="height" constant="40" id="a0a-bd-uGJ"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -292,9 +292,9 @@
                                                         <constraint firstAttribute="width" constant="40" id="cp8-po-BHb"/>
                                                         <constraint firstAttribute="height" constant="40" id="wQG-9e-iW1"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -357,9 +357,9 @@
                                                         <constraint firstAttribute="width" constant="40" id="0G1-GL-NSL"/>
                                                         <constraint firstAttribute="height" constant="40" id="YuQ-LO-Sa0"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -411,6 +411,9 @@
                                                             <exclude reference="uSI-ek-EJz"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="nextTest" destination="J7T-6e-khL" eventType="touchUpInside" id="Tyu-bU-7eU"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
