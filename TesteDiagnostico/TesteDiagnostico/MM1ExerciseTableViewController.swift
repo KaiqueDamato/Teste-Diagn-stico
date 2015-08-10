@@ -67,8 +67,8 @@ class MM1ExerciseTableViewController: UITableViewController {
     @IBAction func textToSpeech(sender: KPButton) {
         var words = memoryModel.getWords()
         
-        for i in words {
-            myUtterance = AVSpeechUtterance(string: i)
+        for word in words {
+            myUtterance = AVSpeechUtterance(string: word)
             myUtterance.rate = 0.1
             myUtterance.postUtteranceDelay = 0.6
             synth.speakUtterance(myUtterance)
@@ -76,9 +76,10 @@ class MM1ExerciseTableViewController: UITableViewController {
     }
     
     func animateAnswers(buttonTag: NSInteger, nextNumber: NSNumber) {
-        let bounds = self.answerButtons[buttonTag].bounds
-        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
-            self.answerButtons[buttonTag].bounds = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.size.width + 2, height: bounds.size.height + 2)
+        self.answerButtons[buttonTag].transform = CGAffineTransformMakeScale(0.8, 0.8)
+        
+        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 4.0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { () -> Void in
+            self.answerButtons[buttonTag].transform = CGAffineTransformIdentity
         }, completion: nil)
     }
     
