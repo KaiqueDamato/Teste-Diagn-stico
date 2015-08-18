@@ -16,6 +16,9 @@
 		A2F938E41B75C308008BC857 /* PatientPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938E31B75C308008BC857 /* PatientPoint.swift */; };
 		A2F938E61B75C308008BC857 /* VSPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F938E51B75C308008BC857 /* VSPoint.swift */; };
 		CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD5A56C1B727DF2009EA942 /* Memory.storyboard */; };
+		EC40CF141B76A7C30002C7FC /* Attention.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC40CF131B76A7C30002C7FC /* Attention.storyboard */; };
+		EC40CF161B76ABCE0002C7FC /* AT1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC40CF151B76ABCE0002C7FC /* AT1ExerciseExtension.swift */; };
+		EC40CF181B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC40CF171B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift */; };
 		EC8CD5CF1B75251100151EE9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */; };
 		EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */; };
 		EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9926E91B73A9930056C733 /* OCInspectableView.swift */; };
@@ -54,6 +57,9 @@
 		A2F938E31B75C308008BC857 /* PatientPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPoint.swift; sourceTree = "<group>"; };
 		A2F938E51B75C308008BC857 /* VSPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSPoint.swift; sourceTree = "<group>"; };
 		CAD5A56C1B727DF2009EA942 /* Memory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memory.storyboard; sourceTree = "<group>"; };
+		EC40CF131B76A7C30002C7FC /* Attention.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attention.storyboard; sourceTree = "<group>"; };
+		EC40CF151B76ABCE0002C7FC /* AT1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT1ExerciseExtension.swift; sourceTree = "<group>"; };
+		EC40CF171B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT1ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		EC8CD5CE1B75251100151EE9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC9926E51B73A16E0056C733 /* MM1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MM1ExerciseExtension.swift; sourceTree = "<group>"; };
 		EC9926E91B73A9930056C733 /* OCInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCInspectableView.swift; sourceTree = "<group>"; };
@@ -120,6 +126,16 @@
 			name = MemoryTest;
 			sourceTree = "<group>";
 		};
+		EC40CF101B76A66E0002C7FC /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				EC40CF131B76A7C30002C7FC /* Attention.storyboard */,
+				EC40CF151B76ABCE0002C7FC /* AT1ExerciseExtension.swift */,
+				EC40CF171B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift */,
+			);
+			name = Attention;
+			sourceTree = "<group>";
+		};
 		ECA170EC1B719A20009E29CE /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,13 +168,13 @@
 		ECCC1EC91B712E51009484E7 /* TesteDiagnostico */ = {
 			isa = PBXGroup;
 			children = (
-				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
+				EC40CF101B76A66E0002C7FC /* Attention */,
+				ECA170EC1B719A20009E29CE /* Images */,
 				A2F938DA1B75AD87008BC857 /* VisuoSpatialTest */,
 				CAD5A56B1B727DC2009EA942 /* MemoryTest */,
-				ECA170EC1B719A20009E29CE /* Images */,
 				ECFED3971B71916200AA9A21 /* NamingTest */,
-				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
+				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
 				ECCC1ECA1B712E51009484E7 /* Supporting Files */,
 			);
 			path = TesteDiagnostico;
@@ -167,6 +183,7 @@
 		ECCC1ECA1B712E51009484E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */,
 				EC9926E91B73A9930056C733 /* OCInspectableView.swift */,
 				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
 				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
@@ -292,6 +309,7 @@
 				ECA170F01B719A2F009E29CE /* porco.png in Resources */,
 				ECFED3991B7191E600AA9A21 /* Naming.storyboard in Resources */,
 				ECCC1ED71B712E51009484E7 /* Images.xcassets in Resources */,
+				EC40CF141B76A7C30002C7FC /* Attention.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,12 +331,14 @@
 				A2F938C11B725BDB008BC857 /* VSViewController.swift in Sources */,
 				A2F938E41B75C308008BC857 /* PatientPoint.swift in Sources */,
 				EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */,
+				EC40CF181B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift in Sources */,
 				EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
 				EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */,
 				A2F938E61B75C308008BC857 /* VSPoint.swift in Sources */,
 				A2F938E21B75C307008BC857 /* VS1Exercise.swift in Sources */,
 				ECA170EB1B7192BC009E29CE /* NamingViewController.swift in Sources */,
+				EC40CF161B76ABCE0002C7FC /* AT1ExerciseExtension.swift in Sources */,
 				ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */,
 				A2F938BD1B719B0C008BC857 /* VS1ExerciseExtension.swift in Sources */,
 				A2F938BF1B719BCD008BC857 /* VSPointExtension.swift in Sources */,
@@ -457,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -470,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

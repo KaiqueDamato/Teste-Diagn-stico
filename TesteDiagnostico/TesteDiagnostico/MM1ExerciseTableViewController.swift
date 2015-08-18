@@ -61,25 +61,38 @@ class MM1ExerciseTableViewController: UITableViewController {
         answerButtons[numberButton].enabled = false
         buttons[numberButton].enabled = false
         
-        self.animateAnswers(numberButton)
+        self.animateAnswers(numberButton, nextNumber: nextNumber)
     }
     
     @IBAction func textToSpeech(sender: KPButton) {
         var words = memoryModel.getWords()
         
-        for var index = 0; index < words.count; index++ {
-            
-            myUtterance = AVSpeechUtterance(string: words[index])
+        for word in words {
+            myUtterance = AVSpeechUtterance(string: word)
             myUtterance.rate = 0.1
             myUtterance.postUtteranceDelay = 0.6
             synth.speakUtterance(myUtterance)
         }
     }
     
-    func animateAnswers(buttonTag: NSInteger) {
-        let bounds = self.answerButtons[buttonTag].bounds
-        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: nil, animations: { () -> Void in
-            self.answerButtons[buttonTag].bounds = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.size.width + 2, height: bounds.size.height + 2)
+    func animateAnswers(buttonTag: NSInteger, nextNumber: NSNumber) {
+        self.answerButtons[buttonTag].transform = CGAffineTransformMakeScale(0.8, 0.8)
+        
+        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 4.0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { () -> Void in
+            self.answerButtons[buttonTag].transform = CGAffineTransformIdentity
         }, completion: nil)
     }
+    
+    @IBAction func nextTest() {
+        //SALVAR O ARRAY TOUCHESSEQUENCE E A SEQUÊNCIA DAS PALAVRAS NO BANCO DE DADOS
+        for var index = 0; index < buttons.count; index++ {
+            answerButtons[index].setTitle(" ", forState: UIControlState.Normal)
+            answerButtons[index].backgroundColor = UIColor.whiteColor()
+            buttons[index].enabled = true
+            answerButtons[index].enabled = true
+        }
+        touchesSequence.removeAll(keepCapacity: false)
+    }
+    
+    
 }

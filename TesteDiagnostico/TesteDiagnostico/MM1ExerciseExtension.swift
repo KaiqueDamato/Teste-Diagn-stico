@@ -10,7 +10,7 @@ import UIKit
 
 class MM1ExerciseExtension: NSObject {
     
-    var words = ["Barco", "Ovo", "Calças", "Sofá", "Roxo"]
+    let words = ["Barco", "Ovo", "Calças", "Sofá", "Roxo"]
     
     func getWords() -> [String] {
         return words
