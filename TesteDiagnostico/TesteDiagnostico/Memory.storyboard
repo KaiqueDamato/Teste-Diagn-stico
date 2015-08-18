@@ -12,7 +12,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0HY-9N-zO9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="m7J-qs-HIe">
                                 <cells>
@@ -21,19 +22,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pbY-cW-iy1" id="SNR-cQ-cfD">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhJ-hY-oSa" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="170" y="8" width="260" height="260"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhJ-hY-oSa" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="210" y="70" width="180" height="180"/>
                                                     <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="260" id="9r8-pe-1z0"/>
-                                                        <constraint firstAttribute="width" constant="260" id="BPP-N8-cgT"/>
+                                                        <constraint firstAttribute="height" constant="180" id="9r8-pe-1z0"/>
+                                                        <constraint firstAttribute="width" constant="180" id="BPP-N8-cgT"/>
                                                     </constraints>
-                                                    <state key="normal">
+                                                    <state key="normal" image="speaker">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="130"/>
+                                                            <real key="value" value="90"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -41,10 +42,10 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="zhJ-hY-oSa" secondAttribute="centerY" id="9yB-PW-0NR"/>
-                                                <constraint firstItem="zhJ-hY-oSa" firstAttribute="top" secondItem="SNR-cQ-cfD" secondAttribute="topMargin" id="LfO-yp-KD8"/>
+                                                <constraint firstItem="zhJ-hY-oSa" firstAttribute="top" secondItem="SNR-cQ-cfD" secondAttribute="topMargin" constant="62" id="LfO-yp-KD8"/>
                                                 <constraint firstAttribute="centerX" secondItem="zhJ-hY-oSa" secondAttribute="centerX" id="pXR-jr-PQk"/>
                                             </constraints>
                                             <variation key="default">
@@ -53,7 +54,7 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="s4C-uj-4Il">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -91,11 +92,11 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-d1-x0M" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <rect key="frame" x="545" y="28" width="30" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="aSa-TV-syf"/>
-                                                        <constraint firstAttribute="height" constant="40" id="oEL-eJ-fse"/>
+                                                        <constraint firstAttribute="width" constant="30" id="aSa-TV-syf"/>
+                                                        <constraint firstAttribute="height" constant="30" id="oEL-eJ-fse"/>
                                                     </constraints>
                                                     <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,7 +104,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -111,12 +112,12 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="top" secondItem="jiK-Pn-ZGl" secondAttribute="bottom" constant="-49" id="9fr-mk-cbB"/>
+                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="top" secondItem="jiK-Pn-ZGl" secondAttribute="bottom" constant="-44" id="9fr-mk-cbB"/>
                                                 <constraint firstItem="jiK-Pn-ZGl" firstAttribute="trailing" secondItem="iRs-PV-tzG" secondAttribute="trailingMargin" id="AJJ-o1-yQx"/>
                                                 <constraint firstAttribute="centerX" secondItem="jiK-Pn-ZGl" secondAttribute="centerX" id="Ln6-mR-OBZ"/>
-                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="leading" secondItem="jiK-Pn-ZGl" secondAttribute="trailing" constant="-62" id="W8U-gF-Zxc"/>
+                                                <constraint firstItem="n6z-d1-x0M" firstAttribute="leading" secondItem="jiK-Pn-ZGl" secondAttribute="trailing" constant="-47" id="W8U-gF-Zxc"/>
                                                 <constraint firstAttribute="centerY" secondItem="jiK-Pn-ZGl" secondAttribute="centerY" id="gm6-aS-Kox"/>
                                                 <constraint firstItem="jiK-Pn-ZGl" firstAttribute="leading" secondItem="iRs-PV-tzG" secondAttribute="leadingMargin" id="iVF-Ob-sgo"/>
                                             </constraints>
@@ -156,11 +157,11 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-bM-HUf" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <rect key="frame" x="545" y="28" width="30" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="JzB-nt-Zxx"/>
-                                                        <constraint firstAttribute="height" constant="40" id="KXq-eU-xKO"/>
+                                                        <constraint firstAttribute="width" constant="30" id="JzB-nt-Zxx"/>
+                                                        <constraint firstAttribute="height" constant="30" id="KXq-eU-xKO"/>
                                                     </constraints>
                                                     <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,7 +169,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -176,11 +177,11 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="8MO-GU-ZCc" secondAttribute="centerY" id="6il-ia-kdS"/>
-                                                <constraint firstItem="qZF-bM-HUf" firstAttribute="leading" secondItem="8MO-GU-ZCc" secondAttribute="trailing" constant="-62" id="Hu6-YW-z80"/>
-                                                <constraint firstItem="8MO-GU-ZCc" firstAttribute="top" secondItem="qZF-bM-HUf" secondAttribute="bottom" constant="-50" id="IzR-zV-j4Z"/>
+                                                <constraint firstItem="qZF-bM-HUf" firstAttribute="leading" secondItem="8MO-GU-ZCc" secondAttribute="trailing" constant="-47" id="Hu6-YW-z80"/>
+                                                <constraint firstItem="8MO-GU-ZCc" firstAttribute="top" secondItem="qZF-bM-HUf" secondAttribute="bottom" constant="-45" id="IzR-zV-j4Z"/>
                                                 <constraint firstAttribute="centerX" secondItem="8MO-GU-ZCc" secondAttribute="centerX" id="MDP-Vi-mIy"/>
                                                 <constraint firstItem="8MO-GU-ZCc" firstAttribute="trailing" secondItem="m4F-NZ-CWy" secondAttribute="trailingMargin" id="SaQ-U7-JOJ"/>
                                                 <constraint firstItem="8MO-GU-ZCc" firstAttribute="leading" secondItem="m4F-NZ-CWy" secondAttribute="leadingMargin" id="ZIL-R3-pmK"/>
@@ -221,11 +222,11 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50E-vu-XgZ" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <rect key="frame" x="545" y="28" width="30" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="9C7-Al-7hx"/>
-                                                        <constraint firstAttribute="height" constant="40" id="a0a-bd-uGJ"/>
+                                                        <constraint firstAttribute="width" constant="30" id="9C7-Al-7hx"/>
+                                                        <constraint firstAttribute="height" constant="30" id="a0a-bd-uGJ"/>
                                                     </constraints>
                                                     <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -233,7 +234,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -241,13 +242,13 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="GX0-32-QNx" firstAttribute="leading" secondItem="SDf-N6-Ixv" secondAttribute="leadingMargin" id="O47-L0-02A"/>
-                                                <constraint firstItem="50E-vu-XgZ" firstAttribute="leading" secondItem="GX0-32-QNx" secondAttribute="trailing" constant="-62" id="SUm-Xo-bGv"/>
+                                                <constraint firstItem="50E-vu-XgZ" firstAttribute="leading" secondItem="GX0-32-QNx" secondAttribute="trailing" constant="-47" id="SUm-Xo-bGv"/>
                                                 <constraint firstAttribute="centerY" secondItem="GX0-32-QNx" secondAttribute="centerY" id="Zid-YC-oGL"/>
                                                 <constraint firstAttribute="centerX" secondItem="GX0-32-QNx" secondAttribute="centerX" id="cyk-dn-gGT"/>
-                                                <constraint firstItem="GX0-32-QNx" firstAttribute="top" secondItem="50E-vu-XgZ" secondAttribute="bottom" constant="-49.5" id="oDr-Tl-Hcl"/>
+                                                <constraint firstItem="GX0-32-QNx" firstAttribute="top" secondItem="50E-vu-XgZ" secondAttribute="bottom" constant="-45" id="oDr-Tl-Hcl"/>
                                                 <constraint firstItem="GX0-32-QNx" firstAttribute="trailing" secondItem="SDf-N6-Ixv" secondAttribute="trailingMargin" id="t6x-QS-AUP"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -286,11 +287,11 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmJ-pC-SVr" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <rect key="frame" x="545" y="28" width="30" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="cp8-po-BHb"/>
-                                                        <constraint firstAttribute="height" constant="40" id="wQG-9e-iW1"/>
+                                                        <constraint firstAttribute="width" constant="30" id="cp8-po-BHb"/>
+                                                        <constraint firstAttribute="height" constant="30" id="wQG-9e-iW1"/>
                                                     </constraints>
                                                     <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,7 +299,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -306,13 +307,13 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="yqQ-dH-AoZ" secondAttribute="centerX" id="Hmz-bY-jPk"/>
                                                 <constraint firstItem="yqQ-dH-AoZ" firstAttribute="trailing" secondItem="kNf-12-foi" secondAttribute="trailingMargin" id="OGL-bA-7lD"/>
                                                 <constraint firstAttribute="centerY" secondItem="yqQ-dH-AoZ" secondAttribute="centerY" id="caP-Xv-tuV"/>
-                                                <constraint firstItem="yqQ-dH-AoZ" firstAttribute="top" secondItem="XmJ-pC-SVr" secondAttribute="bottom" constant="-50" id="d27-kc-u9f"/>
-                                                <constraint firstItem="XmJ-pC-SVr" firstAttribute="leading" secondItem="yqQ-dH-AoZ" secondAttribute="trailing" constant="-62" id="qfx-cG-xXW"/>
+                                                <constraint firstItem="yqQ-dH-AoZ" firstAttribute="top" secondItem="XmJ-pC-SVr" secondAttribute="bottom" constant="-45" id="d27-kc-u9f"/>
+                                                <constraint firstItem="XmJ-pC-SVr" firstAttribute="leading" secondItem="yqQ-dH-AoZ" secondAttribute="trailing" constant="-47" id="qfx-cG-xXW"/>
                                                 <constraint firstItem="yqQ-dH-AoZ" firstAttribute="leading" secondItem="kNf-12-foi" secondAttribute="leadingMargin" id="vb6-ZE-HG0"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -351,11 +352,11 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rax-Ow-de5" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="530" y="23" width="40" height="40"/>
+                                                    <rect key="frame" x="545" y="28" width="30" height="30"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="0G1-GL-NSL"/>
-                                                        <constraint firstAttribute="height" constant="40" id="YuQ-LO-Sa0"/>
+                                                        <constraint firstAttribute="width" constant="30" id="0G1-GL-NSL"/>
+                                                        <constraint firstAttribute="height" constant="30" id="YuQ-LO-Sa0"/>
                                                     </constraints>
                                                     <state key="normal" title=" ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -363,7 +364,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -371,13 +372,13 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="zjX-bx-elo" secondAttribute="centerX" id="AGF-fA-lwa"/>
                                                 <constraint firstItem="zjX-bx-elo" firstAttribute="leading" secondItem="BJv-4t-nz8" secondAttribute="leadingMargin" id="Bde-jP-IQN"/>
-                                                <constraint firstItem="zjX-bx-elo" firstAttribute="top" secondItem="Rax-Ow-de5" secondAttribute="bottom" constant="-50" id="HUD-Pz-yQd"/>
+                                                <constraint firstItem="zjX-bx-elo" firstAttribute="top" secondItem="Rax-Ow-de5" secondAttribute="bottom" constant="-45" id="HUD-Pz-yQd"/>
                                                 <constraint firstItem="zjX-bx-elo" firstAttribute="trailing" secondItem="BJv-4t-nz8" secondAttribute="trailingMargin" id="Lce-MM-6Xp"/>
-                                                <constraint firstItem="Rax-Ow-de5" firstAttribute="leading" secondItem="zjX-bx-elo" secondAttribute="trailing" constant="-62" id="g5c-qk-3TJ"/>
+                                                <constraint firstItem="Rax-Ow-de5" firstAttribute="leading" secondItem="zjX-bx-elo" secondAttribute="trailing" constant="-47" id="g5c-qk-3TJ"/>
                                                 <constraint firstAttribute="centerY" secondItem="zjX-bx-elo" secondAttribute="centerY" id="y3S-wG-GKk"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -389,10 +390,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Zn-Vwr" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="72" width="584" height="60"/>
+                                                    <rect key="frame" x="8" y="32" width="584" height="100"/>
                                                     <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="Ngb-0Q-bdP"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Ngb-0Q-bdP"/>
                                                         <constraint firstAttribute="width" constant="584" id="uSI-ek-EJz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -403,7 +404,7 @@
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="30"/>
+                                                            <real key="value" value="50"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <variation key="default">
@@ -416,7 +417,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="dl7-Zn-Vwr" secondAttribute="centerX" id="BWR-Kb-HTN"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="dl7-Zn-Vwr" secondAttribute="trailing" id="Tat-k8-qOF"/>
@@ -480,4 +481,7 @@
             <point key="canvasLocation" x="-87" y="413"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="speaker" width="26" height="26"/>
+    </resources>
 </document>
