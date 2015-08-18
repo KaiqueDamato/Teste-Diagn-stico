@@ -35,7 +35,6 @@ class VS1View: UIView {
                 path.moveToPoint(point)
             } else {
                 path.addLineToPoint(point)
-                println("Point = (\(point.x), \(point.y))")
             }
         }
         path.stroke()
