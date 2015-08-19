@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -112,14 +113,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="23D-PF-FgB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="23D-PF-FgB">
                                 <rect key="frame" x="196" y="15" width="209" height="209"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="8xe-mv-vhy"/>
+                                    <constraint firstAttribute="width" constant="209" id="nkb-Kp-HqZ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.12549019607843137" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="23D-PF-FgB" secondAttribute="centerY" id="NCx-PZ-Mjn"/>
+                            <constraint firstAttribute="centerX" secondItem="23D-PF-FgB" secondAttribute="centerX" id="kmS-Cl-rKn"/>
+                            <constraint firstItem="23D-PF-FgB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="r1X-KD-de5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NCx-PZ-Mjn"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="sPP-ah-gKA" appends="YES" id="7d4-SU-qcf"/>
                             <outletCollection property="gestureRecognizers" destination="Rak-v4-6lg" appends="YES" id="MHK-7M-EHc"/>
