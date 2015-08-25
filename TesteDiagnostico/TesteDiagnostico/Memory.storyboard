@@ -5,12 +5,12 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Memory-->
+        <!--Exercise Table View Controller-->
         <scene sceneID="WkJ-MB-k5o">
             <objects>
                 <tableViewController id="J7T-6e-khL" customClass="MM1ExerciseTableViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0HY-9N-zO9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -23,18 +23,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhJ-hY-oSa" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                                    <rect key="frame" x="210" y="70" width="180" height="180"/>
-                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="250" y="105" width="100" height="100"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="180" id="9r8-pe-1z0"/>
-                                                        <constraint firstAttribute="width" constant="180" id="BPP-N8-cgT"/>
+                                                        <constraint firstAttribute="height" constant="100" id="9r8-pe-1z0"/>
+                                                        <constraint firstAttribute="width" constant="100" id="BPP-N8-cgT"/>
                                                     </constraints>
                                                     <state key="normal" image="speaker">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="90"/>
+                                                            <real key="value" value="50"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
@@ -45,7 +45,7 @@
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="zhJ-hY-oSa" secondAttribute="centerY" id="9yB-PW-0NR"/>
-                                                <constraint firstItem="zhJ-hY-oSa" firstAttribute="top" secondItem="SNR-cQ-cfD" secondAttribute="topMargin" constant="62" id="LfO-yp-KD8"/>
+                                                <constraint firstItem="zhJ-hY-oSa" firstAttribute="top" secondItem="SNR-cQ-cfD" secondAttribute="topMargin" constant="97" id="LfO-yp-KD8"/>
                                                 <constraint firstAttribute="centerX" secondItem="zhJ-hY-oSa" secondAttribute="centerX" id="pXR-jr-PQk"/>
                                             </constraints>
                                             <variation key="default">
@@ -63,7 +63,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-Pn-ZGl" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="12" width="584" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="584" id="F5b-qW-yyg"/>
                                                         <constraint firstAttribute="height" constant="60" id="o8R-yA-byI"/>
@@ -131,7 +131,7 @@
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MO-GU-ZCc" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="13" width="584" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="584" id="JRN-9b-cQP"/>
                                                         <constraint firstAttribute="height" constant="60" id="vPo-oW-RSw"/>
@@ -196,7 +196,7 @@
                                             <subviews>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX0-32-QNx" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="13" width="584" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="584" id="CtN-Vu-008"/>
                                                         <constraint firstAttribute="height" constant="60" id="fEh-Sz-t0g"/>
@@ -261,7 +261,7 @@
                                             <subviews>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqQ-dH-AoZ" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="13" width="584" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="584" id="QD1-dK-Y0h"/>
                                                         <constraint firstAttribute="height" constant="60" id="hfZ-In-7AS"/>
@@ -326,7 +326,7 @@
                                             <subviews>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjX-bx-elo" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="13" width="584" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="584" id="OZ3-OH-hfR"/>
                                                         <constraint firstAttribute="height" constant="60" id="mm7-Iy-bsh"/>
@@ -391,7 +391,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Zn-Vwr" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="32" width="584" height="100"/>
-                                                    <color key="backgroundColor" red="0.55686274509803924" green="0.78431372549019607" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="Ngb-0Q-bdP"/>
                                                         <constraint firstAttribute="width" constant="584" id="uSI-ek-EJz"/>
@@ -443,8 +443,9 @@
                             <outlet property="delegate" destination="J7T-6e-khL" id="WEA-9V-r3z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Memory" id="LhD-St-4sn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3He-PG-Old"/>
+                    <navigationItem key="navigationItem" id="LhD-St-4sn">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="naop22" id="3He-PG-Old"/>
                     </navigationItem>
                     <connections>
                         <outlet property="answerFiveButton" destination="Rax-Ow-de5" id="p9w-gi-fK7"/>
@@ -468,10 +469,24 @@
         <scene sceneID="rwU-cd-j1D">
             <objects>
                 <navigationController id="ZQL-75-hgZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GPG-XW-3wQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="GPG-XW-3wQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="63"/>
+                            <color key="textColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Crn-qN-u7d">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="J7T-6e-khL" kind="relationship" relationship="rootViewController" id="1aU-ZS-11c"/>
                     </connections>
@@ -482,6 +497,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="naop22" width="22" height="22"/>
         <image name="speaker" width="26" height="26"/>
     </resources>
 </document>

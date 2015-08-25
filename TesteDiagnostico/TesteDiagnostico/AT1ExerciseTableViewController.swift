@@ -37,7 +37,8 @@ class AT1ExerciseTableViewController: UITableViewController {
     let synth = AVSpeechSynthesizer()
     var myUtterance = AVSpeechUtterance(string: "")
     
-    var pointsInExercise = 0
+    var pointsInExerciseOne = 0
+    var pointsInExerciseTwo = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,40 +85,26 @@ class AT1ExerciseTableViewController: UITableViewController {
     }
     
     @IBAction func firstAnswer(sender: KPButton) {
-        if sender.tag == 0 {
-            pointsInExercise++
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            wrongOneButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
-        } else if sender.tag == 1 {
-            pointsInExercise--
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            correctOneButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
+        if sender.tag == 1 {
+            pointsInExerciseOne = sender.tag
+            sender.backgroundColor = UIColor(red: 22/255, green: 142/255, blue: 234/255, alpha: 1)
+            wrongOneButton.backgroundColor = UIColor(red: 15/255, green: 20/255, blue: 65/255, alpha: 1)
+        } else if sender.tag == 0 {
+            pointsInExerciseOne = sender.tag
+            sender.backgroundColor = UIColor(red: 22/255, green: 142/255, blue: 234/255, alpha: 1)
+            correctOneButton.backgroundColor = UIColor(red: 15/255, green: 20/255, blue: 65/255, alpha: 1)
         }
-        println(pointsInExercise)
     }
     
     @IBAction func secondAnswer(sender: KPButton) {
-        if sender.tag == 2 {
-            pointsInExercise++
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            wrongTwoButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
-        } else if sender.tag == 3 {
-            pointsInExercise--
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            correctTwoButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
-        }
-        println(pointsInExercise)
-    }
-    
-    @IBAction func selectedSequence(sender: KPButton) {
-        if sender.tag == 0 {
-            voiceButton.tag = 0
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            choiceTwoButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
-        } else if sender.tag == 1 {
-            voiceButton.tag = 1
-            sender.backgroundColor = UIColor(red: 0/255, green: 175/255, blue: 240/255, alpha: 1)
-            choiceOneButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
+        if sender.tag == 1 {
+            pointsInExerciseTwo = sender.tag
+            sender.backgroundColor = UIColor(red: 22/255, green: 142/255, blue: 234/255, alpha: 1)
+            wrongTwoButton.backgroundColor = UIColor(red: 15/255, green: 20/255, blue: 65/255, alpha: 1)
+        } else if sender.tag == 0 {
+            pointsInExerciseTwo = sender.tag
+            sender.backgroundColor = UIColor(red: 22/255, green: 142/255, blue: 234/255, alpha: 1)
+            correctTwoButton.backgroundColor = UIColor(red: 15/255, green: 20/255, blue: 65/255, alpha: 1)
         }
     }
     
