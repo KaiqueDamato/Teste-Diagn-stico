@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AhL-eB-z2r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AhL-eB-z2r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -24,22 +24,42 @@
                                     <constraint firstAttribute="height" constant="208" id="pZo-ty-dZ2"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-TP-Q5l">
-                                <rect key="frame" x="409" y="374" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-TP-Q5l" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="408" y="374" width="60" height="60"/>
                                 <animations/>
-                                <state key="normal" title="Errado">
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4lW-kb-rzB"/>
+                                    <constraint firstAttribute="width" constant="60" id="BIq-me-Jck"/>
+                                </constraints>
+                                <state key="normal" image="naop22">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="wrongAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="JxD-zr-k4s"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-xV-XvP">
-                                <rect key="frame" x="115" y="374" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-xV-XvP" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="132" y="374" width="60" height="60"/>
                                 <animations/>
-                                <state key="normal" title="Certo">
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0ee-Y7-qec"/>
+                                    <constraint firstAttribute="width" constant="60" id="Lte-FQ-Tqx"/>
+                                </constraints>
+                                <state key="normal" image="yeap22">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="rightAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="pmO-l0-RUX"/>
                                 </connections>
@@ -50,10 +70,10 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="IdL-jT-Fup" secondAttribute="centerX" id="5Vq-uA-LTE"/>
                             <constraint firstAttribute="centerY" secondItem="IdL-jT-Fup" secondAttribute="centerY" constant="168" id="Ima-Cr-rad"/>
-                            <constraint firstAttribute="centerX" secondItem="ymy-xV-XvP" secondAttribute="centerX" constant="166" id="O4E-sw-XTg"/>
-                            <constraint firstAttribute="centerY" secondItem="NpR-TP-Q5l" secondAttribute="centerY" constant="-89" id="Rhu-Hf-zZh"/>
-                            <constraint firstAttribute="centerY" secondItem="ymy-xV-XvP" secondAttribute="centerY" constant="-89" id="n4T-wx-iVk"/>
-                            <constraint firstAttribute="centerX" secondItem="NpR-TP-Q5l" secondAttribute="centerX" constant="-132" id="urr-RC-85m"/>
+                            <constraint firstAttribute="centerX" secondItem="ymy-xV-XvP" secondAttribute="centerX" constant="138" id="O4E-sw-XTg"/>
+                            <constraint firstAttribute="centerY" secondItem="NpR-TP-Q5l" secondAttribute="centerY" constant="-104" id="Rhu-Hf-zZh"/>
+                            <constraint firstAttribute="centerY" secondItem="ymy-xV-XvP" secondAttribute="centerY" constant="-104" id="n4T-wx-iVk"/>
+                            <constraint firstAttribute="centerX" secondItem="NpR-TP-Q5l" secondAttribute="centerX" constant="-138" id="urr-RC-85m"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,4 +85,8 @@
             <point key="canvasLocation" x="392" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="naop22" width="22" height="22"/>
+        <image name="yeap22" width="22" height="22"/>
+    </resources>
 </document>
