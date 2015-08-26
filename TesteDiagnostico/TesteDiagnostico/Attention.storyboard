@@ -564,18 +564,33 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f3P-Yi-XRS" id="I87-sm-dty">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-PQ-B0L">
-                                                    <rect key="frame" x="133" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-PQ-B0L" customClass="KPLabel" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="133" y="0.0" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="4py-6M-JtA"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Nh2-Ih-XDT"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hiq-zi-Y1g">
                                                     <rect key="frame" x="323" y="7" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="LAr-PQ-B0L" secondAttribute="centerY" constant="1.75" id="Ckf-dY-Qd8"/>
+                                                <constraint firstItem="LAr-PQ-B0L" firstAttribute="leading" secondItem="I87-sm-dty" secondAttribute="leadingMargin" constant="125" id="Pdw-vt-CbK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="heE-YO-hgl">
@@ -583,18 +598,34 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="heE-YO-hgl" id="JTd-gd-sHI">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fl-MB-c1K">
-                                                    <rect key="frame" x="133" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fl-MB-c1K" customClass="KPLabel" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="133" y="0.0" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="aEK-AP-Sz7"/>
+                                                        <constraint firstAttribute="height" constant="40" id="fbb-eC-t9T"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipping" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYQ-sp-2Rt">
                                                     <rect key="frame" x="323" y="7" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4fl-MB-c1K" firstAttribute="leading" secondItem="JTd-gd-sHI" secondAttribute="leadingMargin" constant="125" id="HAB-SO-UB1"/>
+                                                <constraint firstAttribute="centerY" secondItem="4fl-MB-c1K" secondAttribute="centerY" constant="1.75" id="PxW-YE-N2E"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IUy-MK-daV">
@@ -602,18 +633,33 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IUy-MK-daV" id="Nrm-Ne-bMf">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix9-t7-oeT">
-                                                    <rect key="frame" x="133" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix9-t7-oeT" customClass="KPLabel" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="133" y="0.0" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4OT-M8-PUq"/>
+                                                        <constraint firstAttribute="width" constant="40" id="vav-ck-JQq"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="akH-u6-IxK">
-                                                    <rect key="frame" x="323" y="7" width="97" height="30"/>
+                                                    <rect key="frame" x="323" y="8" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ix9-t7-oeT" firstAttribute="leading" secondItem="Nrm-Ne-bMf" secondAttribute="leadingMargin" constant="125" id="md6-T5-UH6"/>
+                                                <constraint firstAttribute="centerY" secondItem="ix9-t7-oeT" secondAttribute="centerY" constant="1.75" id="pjh-iG-doK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UCR-zV-LV3">
@@ -621,18 +667,33 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UCR-zV-LV3" id="4gc-At-qYh">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-l4-SWj">
-                                                    <rect key="frame" x="133" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-l4-SWj" customClass="KPLabel" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="133" y="2" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="2dU-GP-9WY"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ntB-v1-dEh"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c27-R1-dEN">
                                                     <rect key="frame" x="323" y="7" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="vSq-l4-SWj" secondAttribute="centerY" constant="0.5" id="A3I-J9-MzG"/>
+                                                <constraint firstItem="vSq-l4-SWj" firstAttribute="leading" secondItem="4gc-At-qYh" secondAttribute="leadingMargin" constant="125" id="wg1-Yp-mVj"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ls3-sy-8Uw">
@@ -640,24 +701,60 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ls3-sy-8Uw" id="0UG-iu-sGz">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCz-Vm-GBd">
-                                                    <rect key="frame" x="133" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCz-Vm-GBd" customClass="KPLabel" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="133" y="2" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="D2w-0w-lZg"/>
+                                                        <constraint firstAttribute="width" constant="40" id="gLd-gC-dI2"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fp-PY-mIr">
                                                     <rect key="frame" x="323" y="7" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iCz-Vm-GBd" firstAttribute="leading" secondItem="0UG-iu-sGz" secondAttribute="leadingMargin" constant="125" id="0TJ-CG-IZQ"/>
+                                                <constraint firstAttribute="centerY" secondItem="iCz-Vm-GBd" secondAttribute="centerY" constant="0.5" id="eBk-L1-IiA"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sEd-MT-AMC">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sEd-MT-AMC" id="4uY-mW-fYK">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9d-ph-GWc" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="7" width="584" height="30"/>
+                                                    <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="CONCLUIR">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="u9d-ph-GWc" secondAttribute="centerX" id="8bM-Ca-dlK"/>
+                                                <constraint firstAttribute="centerY" secondItem="u9d-ph-GWc" secondAttribute="centerY" id="OsR-KW-jox"/>
+                                                <constraint firstItem="u9d-ph-GWc" firstAttribute="trailing" secondItem="4uY-mW-fYK" secondAttribute="trailingMargin" id="UFd-Gr-qTK"/>
+                                                <constraint firstItem="u9d-ph-GWc" firstAttribute="leading" secondItem="4uY-mW-fYK" secondAttribute="leadingMargin" id="s8s-8s-YwI"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -668,6 +765,18 @@
                             <outlet property="delegate" destination="Dvs-76-z4i" id="htB-Mv-uFf"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outletCollection property="myLabels" destination="LAr-PQ-B0L" collectionClass="NSMutableArray" id="hOH-Sd-EVJ"/>
+                        <outletCollection property="myLabels" destination="4fl-MB-c1K" collectionClass="NSMutableArray" id="J5T-5e-ewC"/>
+                        <outletCollection property="myLabels" destination="ix9-t7-oeT" collectionClass="NSMutableArray" id="fPY-VE-Slh"/>
+                        <outletCollection property="myLabels" destination="vSq-l4-SWj" collectionClass="NSMutableArray" id="LYa-AI-vAg"/>
+                        <outletCollection property="myLabels" destination="iCz-Vm-GBd" collectionClass="NSMutableArray" id="Ovh-Nf-opy"/>
+                        <outletCollection property="myTextFields" destination="Hiq-zi-Y1g" collectionClass="NSMutableArray" id="cvX-S5-MeA"/>
+                        <outletCollection property="myTextFields" destination="XYQ-sp-2Rt" collectionClass="NSMutableArray" id="rKq-Jw-yOW"/>
+                        <outletCollection property="myTextFields" destination="akH-u6-IxK" collectionClass="NSMutableArray" id="AVt-5P-Kxg"/>
+                        <outletCollection property="myTextFields" destination="c27-R1-dEN" collectionClass="NSMutableArray" id="C0j-b4-0S3"/>
+                        <outletCollection property="myTextFields" destination="4fp-PY-mIr" collectionClass="NSMutableArray" id="ceD-qw-djZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IJ-qg-Zlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

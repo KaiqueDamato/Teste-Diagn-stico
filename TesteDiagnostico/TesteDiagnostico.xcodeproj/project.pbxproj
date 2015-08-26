@@ -19,6 +19,9 @@
 		EC091F931B820628008143F8 /* AT2ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC091F921B820628008143F8 /* AT2ExerciseViewController.swift */; };
 		EC091F951B820651008143F8 /* AT2ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC091F941B820651008143F8 /* AT2ExerciseExtension.swift */; };
 		EC091F9B1B83723B008143F8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC091F9A1B83723B008143F8 /* MyCollectionViewCell.swift */; };
+		EC0F67E51B86399D00A23F24 /* Language.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F67E41B86399D00A23F24 /* Language.storyboard */; };
+		EC0F67E71B863F7200A23F24 /* LN1ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F67E61B863F7200A23F24 /* LN1ExerciseViewController.swift */; };
+		EC0F67E91B86408800A23F24 /* LN1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F67E81B86408800A23F24 /* LN1ExerciseExtension.swift */; };
 		EC40CF141B76A7C30002C7FC /* Attention.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC40CF131B76A7C30002C7FC /* Attention.storyboard */; };
 		EC40CF161B76ABCE0002C7FC /* AT1ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC40CF151B76ABCE0002C7FC /* AT1ExerciseExtension.swift */; };
 		EC40CF181B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC40CF171B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift */; };
@@ -64,6 +67,9 @@
 		EC091F921B820628008143F8 /* AT2ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT2ExerciseViewController.swift; sourceTree = "<group>"; };
 		EC091F941B820651008143F8 /* AT2ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT2ExerciseExtension.swift; sourceTree = "<group>"; };
 		EC091F9A1B83723B008143F8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC0F67E41B86399D00A23F24 /* Language.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Language.storyboard; sourceTree = "<group>"; };
+		EC0F67E61B863F7200A23F24 /* LN1ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LN1ExerciseViewController.swift; sourceTree = "<group>"; };
+		EC0F67E81B86408800A23F24 /* LN1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LN1ExerciseExtension.swift; sourceTree = "<group>"; };
 		EC40CF131B76A7C30002C7FC /* Attention.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attention.storyboard; sourceTree = "<group>"; };
 		EC40CF151B76ABCE0002C7FC /* AT1ExerciseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT1ExerciseExtension.swift; sourceTree = "<group>"; };
 		EC40CF171B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT1ExerciseTableViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,16 @@
 			name = MemoryTest;
 			sourceTree = "<group>";
 		};
+		EC0F67E31B86396B00A23F24 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				EC0F67E41B86399D00A23F24 /* Language.storyboard */,
+				EC0F67E61B863F7200A23F24 /* LN1ExerciseViewController.swift */,
+				EC0F67E81B86408800A23F24 /* LN1ExerciseExtension.swift */,
+			);
+			name = Language;
+			sourceTree = "<group>";
+		};
 		EC40CF101B76A66E0002C7FC /* Attention */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +196,7 @@
 		ECCC1EC91B712E51009484E7 /* TesteDiagnostico */ = {
 			isa = PBXGroup;
 			children = (
+				EC0F67E31B86396B00A23F24 /* Language */,
 				EC40CF101B76A66E0002C7FC /* Attention */,
 				ECA170EC1B719A20009E29CE /* Images */,
 				A2F938DA1B75AD87008BC857 /* VisuoSpatialTest */,
@@ -316,6 +333,7 @@
 				CAD5A56D1B727DF2009EA942 /* Memory.storyboard in Resources */,
 				ECA170F21B719A2F009E29CE /* canguru.png in Resources */,
 				ECA170F11B719A2F009E29CE /* cavalo.png in Resources */,
+				EC0F67E51B86399D00A23F24 /* Language.storyboard in Resources */,
 				ECCC1EDA1B712E51009484E7 /* LaunchScreen.xib in Resources */,
 				A2F938AF1B7192FC008BC857 /* VisuospatialExecutive.storyboard in Resources */,
 				ECA170F01B719A2F009E29CE /* porco.png in Resources */,
@@ -347,6 +365,8 @@
 				EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */,
 				EC40CF181B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift in Sources */,
 				EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */,
+				EC0F67E71B863F7200A23F24 /* LN1ExerciseViewController.swift in Sources */,
+				EC0F67E91B86408800A23F24 /* LN1ExerciseExtension.swift in Sources */,
 				ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */,
 				EC9926EA1B73A9930056C733 /* OCInspectableView.swift in Sources */,
 				A2F938E61B75C308008BC857 /* VSPoint.swift in Sources */,

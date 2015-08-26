@@ -50,3 +50,16 @@ class OCTextfield: UITextField {}
 
 @IBDesignable
 class KPButton: UIButton {}
+
+@IBDesignable
+class KPLabel: UILabel {
+    @IBInspectable
+    var maskToBounds: Bool {
+        get {
+            return layer.masksToBounds
+        }
+        set {
+            layer.masksToBounds = newValue
+        }
+    }
+}

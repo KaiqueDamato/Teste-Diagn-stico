@@ -39,16 +39,16 @@ class ViewController: UIViewController {
     func moveRight() {
         UIView.animateWithDuration(0.3, animations: { () -> Void in
             self.blueView.frame = CGRect(x: self.blueView.frame.origin.x + 300, y: self.blueView.frame.origin.y, width: 300, height: 300)
-            self.greenView.frame  = CGRect(x: self.greenView.frame.origin.x  + 300, y: self.greenView.frame.origin.y,  width: 300, height: 300)
-            self.redView.frame   = CGRect(x: self.redView.frame.origin.x   + 300, y: self.redView.frame.origin.y,   width: 300, height: 300)
+            self.greenView.frame = CGRect(x: self.greenView.frame.origin.x + 300, y: self.greenView.frame.origin.y, width: 300, height: 300)
+            self.redView.frame = CGRect(x: self.redView.frame.origin.x + 300, y: self.redView.frame.origin.y, width: 300, height: 300)
         })
     }
     
     func moveLeft() {
         UIView.animateWithDuration(0.3, animations: { () -> Void in
             self.blueView.frame = CGRect(x: self.blueView.frame.origin.x - 300, y: self.blueView.frame.origin.y, width: 300, height: 300)
-            self.greenView.frame  = CGRect(x: self.greenView.frame.origin.x  - 300, y: self.greenView.frame.origin.y,  width: 300, height: 300)
-            self.redView.frame   = CGRect(x: self.redView.frame.origin.x   - 300, y: self.redView.frame.origin.y,   width: 300, height: 300)
+            self.greenView.frame = CGRect(x: self.greenView.frame.origin.x - 300, y: self.greenView.frame.origin.y, width: 300, height: 300)
+            self.redView.frame = CGRect(x: self.redView.frame.origin.x - 300, y: self.redView.frame.origin.y, width: 300, height: 300)
         })
     }
 

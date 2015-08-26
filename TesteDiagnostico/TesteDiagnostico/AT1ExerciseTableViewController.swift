@@ -107,5 +107,4 @@ class AT1ExerciseTableViewController: UITableViewController {
             correctTwoButton.backgroundColor = UIColor(red: 142/255, green: 200/255, blue: 63/255, alpha: 1)
         }
     }
-    
 }
