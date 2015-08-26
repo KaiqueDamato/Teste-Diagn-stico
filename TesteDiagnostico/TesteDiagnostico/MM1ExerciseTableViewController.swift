@@ -34,12 +34,11 @@ class MM1ExerciseTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         buttons = [wordOneButton, wordTwoButton, wordThreeButton, wordFourButton, wordFiveButton]
         answerButtons = [answerOneButton, answerTwoButton, answerThreeButton, answerFourButton, answerFiveButton]
         self.configurateButtons()
     }
-
+    
     func configurateButtons() {
         var words = memoryModel.getWords()
         
@@ -57,7 +56,7 @@ class MM1ExerciseTableViewController: UITableViewController {
         var nextNumber = touchesSequence.count as NSNumber
         
         answerButtons[numberButton].setTitle(nextNumber.stringValue, forState: UIControlState.Normal)
-        answerButtons[numberButton].backgroundColor = UIColor(red: 0.55686275, green: 0.78431373, blue: 0.24705882, alpha: 1)
+        answerButtons[numberButton].backgroundColor = UIColor(red: 22/255, green: 142/255, blue: 234/255, alpha: 1)
         answerButtons[numberButton].enabled = false
         buttons[numberButton].enabled = false
         

@@ -205,6 +205,7 @@
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
 				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
 				ECCC1ECA1B712E51009484E7 /* Supporting Files */,
+				ECCC1ECB1B712E51009484E7 /* Info.plist */,
 			);
 			path = TesteDiagnostico;
 			sourceTree = "<group>";
@@ -217,7 +218,6 @@
 				ECCC1ED61B712E51009484E7 /* Images.xcassets */,
 				ECCC1ED81B712E51009484E7 /* LaunchScreen.xib */,
 				ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */,
-				ECCC1ECB1B712E51009484E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				TargetAttributes = {
 					ECCC1EC61B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 66BPT5DT27;
+						DevelopmentTeam = 6U45FT46QZ;
 					};
 					ECCC1EDE1B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;

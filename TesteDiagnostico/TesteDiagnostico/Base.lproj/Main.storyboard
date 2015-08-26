@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CwT-Ko-6KH" userLabel="blue" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="16" y="243" width="300" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwT-Ko-6KH" userLabel="blue" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="16" y="200" width="300" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLR-s0-wWy" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                         <rect key="frame" x="60" y="207" width="180" height="50"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="INICIAR">
+                                        <state key="normal" title="CONFIGURAÇÕES">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -36,12 +36,16 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="settingsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p6S-81-kmc">
-                                        <rect key="frame" x="75" y="32" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="settingsIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="p6S-81-kmc">
+                                        <rect key="frame" x="90" y="55" width="120" height="120"/>
                                     </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KBs-bf-Bij"/>
+                                    <constraint firstAttribute="height" constant="300" id="xKc-e9-uTU"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
@@ -51,8 +55,51 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-Lx-SWD" userLabel="green" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="336" y="243" width="300" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-qn-zjE" userLabel="red" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="656" y="200" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty2-bI-J2u" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="202" width="180" height="50"/>
+                                        <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="RESULTADOS">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grafico-1" translatesAutoresizingMaskIntoConstraints="NO" id="6og-cL-1xU">
+                                        <rect key="frame" x="87" y="51" width="127" height="127"/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4Yj-W6-2pt"/>
+                                    <constraint firstAttribute="width" constant="300" id="tLo-3x-iGY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="23D-PF-FgB">
+                                <rect key="frame" x="196" y="15" width="209" height="209"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="8xe-mv-vhy"/>
+                                    <constraint firstAttribute="width" constant="209" id="nkb-Kp-HqZ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-Lx-SWD" userLabel="green" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="336" y="200" width="300" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bO5-RU-MKx" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
                                         <rect key="frame" x="60" y="202" width="180" height="50"/>
@@ -70,65 +117,36 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="novoTesteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DLy-KT-Of6">
-                                        <rect key="frame" x="75" y="30" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconeNovoTeste-1" translatesAutoresizingMaskIntoConstraints="NO" id="DLy-KT-Of6">
+                                        <rect key="frame" x="97" y="58" width="105" height="105"/>
                                     </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-qn-zjE" userLabel="red" customClass="OCView" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="652" y="243" width="300" height="300"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty2-bI-J2u" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="202" width="180" height="50"/>
-                                        <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="TESTES">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resultisIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6og-cL-1xU">
-                                        <rect key="frame" x="75" y="32" width="150" height="150"/>
-                                    </imageView>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="23D-PF-FgB">
-                                <rect key="frame" x="196" y="15" width="209" height="209"/>
-                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="209" id="8xe-mv-vhy"/>
-                                    <constraint firstAttribute="width" constant="209" id="nkb-Kp-HqZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="ADu-BR-JfC"/>
+                                    <constraint firstAttribute="height" constant="300" id="g7a-3h-q45"/>
                                 </constraints>
-                            </imageView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.078431372549019607" green="0.12549019607843137" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342834999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="nJV-qn-zjE" firstAttribute="leading" secondItem="AxG-Lx-SWD" secondAttribute="trailing" constant="20" id="DCn-MO-d4E"/>
                             <constraint firstAttribute="centerY" secondItem="23D-PF-FgB" secondAttribute="centerY" id="NCx-PZ-Mjn"/>
+                            <constraint firstItem="AxG-Lx-SWD" firstAttribute="leading" secondItem="CwT-Ko-6KH" secondAttribute="trailing" constant="20" id="Uhp-Kq-CrC"/>
+                            <constraint firstItem="CwT-Ko-6KH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="anH-ni-sdl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nJV-qn-zjE" secondAttribute="bottom" constant="100" id="i64-TW-X63"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AxG-Lx-SWD" secondAttribute="bottom" constant="100" id="iJ4-z7-jcv"/>
                             <constraint firstAttribute="centerX" secondItem="23D-PF-FgB" secondAttribute="centerX" id="kmS-Cl-rKn"/>
                             <constraint firstItem="23D-PF-FgB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="r1X-KD-de5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CwT-Ko-6KH" secondAttribute="bottom" constant="100" id="yVq-Ou-yRa"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -161,9 +179,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="grafico-1" width="512" height="512"/>
+        <image name="iconeNovoTeste-1" width="512" height="512"/>
         <image name="logo" width="1024" height="1024"/>
-        <image name="novoTesteIcon" width="512" height="512"/>
-        <image name="resultisIcon" width="512" height="512"/>
-        <image name="settingsIcon" width="512" height="512"/>
+        <image name="settingsIcon-1" width="512" height="512"/>
     </resources>
 </document>
