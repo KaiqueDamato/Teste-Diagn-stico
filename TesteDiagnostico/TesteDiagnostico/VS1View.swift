@@ -16,7 +16,7 @@ class VS1View: UIView {
         }
     }
     
-    var patientPoints = [CGPoint]()
+    var patientPoints = [[CGPoint]()]
     
     override func drawRect(rect: CGRect) {
         if points != nil {
@@ -29,17 +29,27 @@ class VS1View: UIView {
                 }
             }
         }
-        var path = UIBezierPath()
-        for point in patientPoints {
-            if point == patientPoints.first {
-                path.moveToPoint(point)
-            } else {
-                path.addLineToPoint(point)
-                println("Point = (\(point.x), \(point.y))")
+        for p in patientPoints {
+            var path = UIBezierPath()
+            for point in p {
+                if point == p.first {
+                    path.moveToPoint(point)
+                } else {
+                    path.addLineToPoint(point)
+                }
             }
+            path.stroke()
         }
-        path.stroke()
-        
+    }
+    
+    func addPoint(point: CGPoint) {
+        var pointsArray = patientPoints.removeLast()
+        pointsArray.append(point)
+        patientPoints.append(pointsArray)
+    }
+    
+    func endStroke() {
+        patientPoints.append([])
     }
     
     func circleWithNumber(number: Int, atPoint point: CGPoint) -> UIBezierPath {

@@ -17,7 +17,6 @@ class VSViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         exercise = VS1Exercise()
         exercise?.createPoints()
-        exerciseView.addGestureRecognizer(gestureRecognizer)
     }
     
     let strings = ["1", "A", "2", "B", "3", "C", "4", "D", "5", "E"]
@@ -41,28 +40,11 @@ class VSViewController: UIViewController, UIGestureRecognizerDelegate {
         view.addSubview(label)
     }
     
-    // MARK: - GestureRecognizer
-    
-    var gestureRecognizer = UIGestureRecognizer() {
-        didSet {
-            gestureRecognizer.delegate = self
-        }
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        // ...
-        println("Begaaaan")
-    }
-    
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        for t in touches {
-            if let touch = t as? UITouch {
-                let point = touch.locationInView(exerciseView)
-                exercise?.addPatientPoint(point)
-                exerciseView.patientPoints.append(point)
-                exerciseView.setNeedsDisplay()
-            }
-        }
+    @IBAction func movedAround(sender: UIPanGestureRecognizer) {
+        let point = sender.locationInView(exerciseView)
+        exercise?.addPatientPoint(point)
+        exerciseView.addPoint(point)
+        exerciseView.setNeedsDisplay()
     }
     
     override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
@@ -70,8 +52,7 @@ class VSViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        // ...
-        println("Endeeeed")
+        exerciseView.endStroke()
     }
 
     @IBAction func nextExercise() {

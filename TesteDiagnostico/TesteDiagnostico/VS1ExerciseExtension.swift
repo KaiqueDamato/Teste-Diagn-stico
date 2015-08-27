@@ -15,7 +15,7 @@ extension VS1Exercise {
         let x = [30, 40, 20, 40, 55, 60, 70, 70, 50, 40]
         let y = [70, 50, 30, 10, 35, 15, 35, 75, 70, 80]
         let strings = ["1", "A", "2", "B", "3", "C", "4", "D", "5", "E"]
-        let scale = 4
+        let scale = 8
         for i in Range(0..<x.count) {
             pointsArray.append(CGPoint(x: x[i] * scale, y: 30 + y[i] * scale))
         }

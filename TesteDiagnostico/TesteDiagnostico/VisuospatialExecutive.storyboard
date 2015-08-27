@@ -20,6 +20,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="465"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IvU-t9-oTH" appends="YES" id="bRf-xp-elK"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-IS-MDG">
                                 <rect key="frame" x="277" y="550" width="46" height="30"/>
@@ -46,6 +49,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="613-6t-Gbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" minimumNumberOfTouches="1" id="IvU-t9-oTH">
+                    <connections>
+                        <action selector="movedAround:" destination="cyw-6R-iKK" id="yVP-JF-cfw"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="403" y="315"/>
         </scene>
