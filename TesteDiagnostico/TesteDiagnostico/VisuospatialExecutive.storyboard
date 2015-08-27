@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cyw-6R-iKK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cyw-6R-iKK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="mmb-rs-Che">
             <objects>
-                <viewController id="cyw-6R-iKK" customClass="VSViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DrawTest" id="cyw-6R-iKK" customClass="VSViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0B0-d3-zaD"/>
                         <viewControllerLayoutGuide type="bottom" id="5b8-Oi-CU8"/>
@@ -17,17 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdH-QC-Cih" customClass="VS1View" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="465"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-IS-MDG">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextExercise" destination="cyw-6R-iKK" eventType="touchUpInside" id="SKL-cA-LJ8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GdH-QC-Cih" firstAttribute="top" secondItem="c1X-40-cug" secondAttribute="top" id="254-Rt-v6S"/>
                             <constraint firstItem="GdH-QC-Cih" firstAttribute="leading" secondItem="c1X-40-cug" secondAttribute="leading" id="4H7-y3-EKl"/>
+                            <constraint firstAttribute="centerY" secondItem="rwK-IS-MDG" secondAttribute="centerY" constant="-265" id="F4M-LQ-tVr"/>
                             <constraint firstAttribute="trailing" secondItem="GdH-QC-Cih" secondAttribute="trailing" id="Z9I-xY-dEL"/>
-                            <constraint firstItem="5b8-Oi-CU8" firstAttribute="top" secondItem="GdH-QC-Cih" secondAttribute="bottom" id="pM3-qL-F1i"/>
+                            <constraint firstAttribute="centerX" secondItem="rwK-IS-MDG" secondAttribute="centerX" id="lqi-Dt-OHZ"/>
+                            <constraint firstItem="5b8-Oi-CU8" firstAttribute="top" secondItem="GdH-QC-Cih" secondAttribute="bottom" constant="135" id="pM3-qL-F1i"/>
                         </constraints>
                     </view>
                     <connections>

@@ -95,7 +95,10 @@ class AT2ExerciseViewController: UIViewController, UICollectionViewDataSource, U
         // Configure the cell
         cell.myLabel.text = attentionModel.getLetters()[indexPath.row].uppercaseString
         
-        
         return cell
+    }
+    
+    @IBAction func stopSpeech() {
+        self.synth.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
     }
 }

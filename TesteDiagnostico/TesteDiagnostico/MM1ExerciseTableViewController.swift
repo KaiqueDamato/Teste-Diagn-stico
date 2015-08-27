@@ -84,6 +84,8 @@ class MM1ExerciseTableViewController: UITableViewController {
     
     @IBAction func nextTest() {
         //SALVAR O ARRAY TOUCHESSEQUENCE E A SEQUÊNCIA DAS PALAVRAS NO BANCO DE DADOS
+        self.synth.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+        
         for var index = 0; index < buttons.count; index++ {
             answerButtons[index].setTitle(" ", forState: UIControlState.Normal)
             answerButtons[index].backgroundColor = UIColor.whiteColor()
