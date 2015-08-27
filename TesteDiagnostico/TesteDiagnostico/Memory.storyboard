@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Exercise Table View Controller-->
+        <!--Memory-->
         <scene sceneID="WkJ-MB-k5o">
             <objects>
                 <tableViewController id="J7T-6e-khL" customClass="MM1ExerciseTableViewController" customModule="TesteDiagnostico" customModuleProvider="target" sceneMemberID="viewController">
@@ -443,8 +443,7 @@
                             <outlet property="delegate" destination="J7T-6e-khL" id="WEA-9V-r3z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LhD-St-4sn">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Memory" id="LhD-St-4sn">
                         <barButtonItem key="leftBarButtonItem" image="naop22" id="3He-PG-Old"/>
                     </navigationItem>
                     <connections>
