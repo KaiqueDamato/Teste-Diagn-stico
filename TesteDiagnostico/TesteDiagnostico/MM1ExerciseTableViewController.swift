@@ -82,6 +82,7 @@ class MM1ExerciseTableViewController: UITableViewController {
         }, completion: nil)
     }
     
+    var counter = 1
     @IBAction func nextTest() {
         //SALVAR O ARRAY TOUCHESSEQUENCE E A SEQUÊNCIA DAS PALAVRAS NO BANCO DE DADOS
         self.synth.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
@@ -93,6 +94,16 @@ class MM1ExerciseTableViewController: UITableViewController {
             answerButtons[index].enabled = true
         }
         touchesSequence.removeAll(keepCapacity: false)
+        
+        if counter == 2 {
+            let exerciseStoryBoard = UIStoryboard(name: "Attention", bundle: nil)
+            
+            if let viewController = exerciseStoryBoard.instantiateInitialViewController() as? UIViewController {
+                viewController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+                presentViewController(viewController, animated: true, completion: nil)
+            }
+        }
+        counter++
     }
     
     
