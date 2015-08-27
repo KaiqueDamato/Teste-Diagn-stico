@@ -25,17 +25,24 @@ class CadastroViewController: UIViewController {
     
 
     @IBAction func registerDone() {
-        let width = self.view.bounds.width
-        let height = self.view.bounds.height
-        exerciseView = UIView(frame: CGRect(x: 0, y: 1100, width: width, height: height))
-        exerciseView.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(exerciseView)
+//        let width = self.view.bounds.width
+//        let height = self.view.bounds.height
+//        exerciseView = UIView(frame: CGRect(x: 0, y: 1100, width: width, height: height))
+//        exerciseView.backgroundColor = UIColor.whiteColor()
+//        self.view.addSubview(exerciseView)
         
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.exerciseView.frame.origin.y = 0
-        }, completion: nil)
+//        UIView.animateWithDuration(0.5, animations: { () -> Void in
+//            self.exerciseView.frame.origin.y = 0
+//        }, completion: nil)
+//        
+//        var timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "newStoryBoard", userInfo: nil, repeats: false)
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "newStoryBoard", userInfo: nil, repeats: false)
+        let exerciseStoryBoard = UIStoryboard(name: "VisuospatialExecutive", bundle: nil)
+        
+        if let viewController = exerciseStoryBoard.instantiateInitialViewController() as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+            presentViewController(viewController, animated: true, completion: nil)
+        }
     }
     
     func newStoryBoard() {

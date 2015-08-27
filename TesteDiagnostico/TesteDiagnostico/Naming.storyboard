@@ -64,6 +64,15 @@
                                     <action selector="rightAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="pmO-l0-RUX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oB-0o-GOR">
+                                <rect key="frame" x="277" y="522" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextExercise" destination="AhL-eB-z2r" eventType="touchUpInside" id="1Ta-60-EBY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,7 +82,9 @@
                             <constraint firstAttribute="centerX" secondItem="ymy-xV-XvP" secondAttribute="centerX" constant="138" id="O4E-sw-XTg"/>
                             <constraint firstAttribute="centerY" secondItem="NpR-TP-Q5l" secondAttribute="centerY" constant="-104" id="Rhu-Hf-zZh"/>
                             <constraint firstAttribute="centerY" secondItem="ymy-xV-XvP" secondAttribute="centerY" constant="-104" id="n4T-wx-iVk"/>
+                            <constraint firstAttribute="centerX" secondItem="7oB-0o-GOR" secondAttribute="centerX" id="ufD-CB-e3u"/>
                             <constraint firstAttribute="centerX" secondItem="NpR-TP-Q5l" secondAttribute="centerX" constant="-138" id="urr-RC-85m"/>
+                            <constraint firstAttribute="centerY" secondItem="7oB-0o-GOR" secondAttribute="centerY" constant="-237" id="xW0-s8-wvP"/>
                         </constraints>
                     </view>
                     <connections>
