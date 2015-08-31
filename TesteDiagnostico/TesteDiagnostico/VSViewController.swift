@@ -55,6 +55,14 @@ class VSViewController: UIViewController, UIGestureRecognizerDelegate {
         exerciseView.endStroke()
     }
 
+    @IBAction func nextExercise() {
+        let exerciseStoryBoard = UIStoryboard(name: "Naming", bundle: nil)
+        
+        if let viewController = exerciseStoryBoard.instantiateInitialViewController() as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

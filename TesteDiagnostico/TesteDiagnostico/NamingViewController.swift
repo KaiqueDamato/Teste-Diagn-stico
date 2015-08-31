@@ -58,4 +58,13 @@ class NamingViewController: UIViewController {
         })
     }
 
+    @IBAction func nextExercise() {
+        let exerciseStoryBoard = UIStoryboard(name: "Memory", bundle: nil)
+        
+        if let viewController = exerciseStoryBoard.instantiateInitialViewController() as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
+    
 }

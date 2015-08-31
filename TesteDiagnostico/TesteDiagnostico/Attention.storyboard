@@ -276,7 +276,8 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="secondAnswer:" destination="ZfQ-SR-eS4" eventType="touchUpInside" id="EY3-HQ-g69"/>
+                                                        <action selector="stopSpeech" destination="ZfQ-SR-eS4" eventType="touchUpInside" id="1OR-tY-dKf"/>
+                                                        <segue destination="LiQ-Wg-Y9s" kind="show" id="aKf-jr-qoe"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -412,8 +413,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="22" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-cV-Guw">
-                                                    <rect key="frame" x="20" y="14" width="11" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-cV-Guw">
+                                                    <rect key="frame" x="6" y="-2" width="11" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -481,6 +482,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="stopSpeech" destination="LiQ-Wg-Y9s" eventType="touchUpInside" id="gp2-Rd-qGV"/>
                                     <segue destination="Dvs-76-z4i" kind="show" id="hGY-4d-Ibk"/>
                                 </connections>
                             </button>
@@ -557,7 +559,7 @@
                                                         <constraint firstAttribute="height" constant="40" id="Nh2-Ih-XDT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
@@ -591,7 +593,7 @@
                                                         <constraint firstAttribute="height" constant="40" id="fbb-eC-t9T"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipping" value="YES"/>
@@ -626,7 +628,7 @@
                                                         <constraint firstAttribute="width" constant="40" id="vav-ck-JQq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
@@ -660,7 +662,7 @@
                                                         <constraint firstAttribute="height" constant="40" id="ntB-v1-dEh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -694,7 +696,7 @@
                                                         <constraint firstAttribute="width" constant="40" id="gLd-gC-dI2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

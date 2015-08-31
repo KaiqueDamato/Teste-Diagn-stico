@@ -34,6 +34,7 @@
 		ECA170F11B719A2F009E29CE /* cavalo.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EE1B719A2F009E29CE /* cavalo.png */; };
 		ECA170F21B719A2F009E29CE /* canguru.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA170EF1B719A2F009E29CE /* canguru.png */; };
 		ECA517361B84BD4100265E5D /* AT3ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA517351B84BD4100265E5D /* AT3ExerciseTableViewController.swift */; };
+		ECBA15DD1B8F449D00A9EEFE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA15DC1B8F449D00A9EEFE /* CadastroViewController.swift */; };
 		ECCC1ECD1B712E51009484E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */; };
 		ECCC1ED01B712E51009484E7 /* TesteDiagnostico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ECE1B712E51009484E7 /* TesteDiagnostico.xcdatamodeld */; };
 		ECCC1ED21B712E51009484E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC1ED11B712E51009484E7 /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		ECA170EE1B719A2F009E29CE /* cavalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cavalo.png; sourceTree = "<group>"; };
 		ECA170EF1B719A2F009E29CE /* canguru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canguru.png; sourceTree = "<group>"; };
 		ECA517351B84BD4100265E5D /* AT3ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AT3ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		ECBA15DC1B8F449D00A9EEFE /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		ECCC1EC71B712E51009484E7 /* TesteDiagnostico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteDiagnostico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCC1ECB1B712E51009484E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCC1ECC1B712E51009484E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				ECFED3971B71916200AA9A21 /* NamingTest */,
 				ECCC1ED31B712E51009484E7 /* Main.storyboard */,
 				ECCC1ED11B712E51009484E7 /* ViewController.swift */,
+				ECBA15DC1B8F449D00A9EEFE /* CadastroViewController.swift */,
 				ECCC1ECA1B712E51009484E7 /* Supporting Files */,
 				ECCC1ECB1B712E51009484E7 /* Info.plist */,
 			);
@@ -297,7 +300,7 @@
 				TargetAttributes = {
 					ECCC1EC61B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 6U45FT46QZ;
+						DevelopmentTeam = 66BPT5DT27;
 					};
 					ECCC1EDE1B712E51009484E7 = {
 						CreatedOnToolsVersion = 6.4;
@@ -363,6 +366,7 @@
 				EC091F931B820628008143F8 /* AT2ExerciseViewController.swift in Sources */,
 				A2F938E41B75C308008BC857 /* PatientPoint.swift in Sources */,
 				EC9926EC1B73CF030056C733 /* MM1ExerciseTableViewController.swift in Sources */,
+				ECBA15DD1B8F449D00A9EEFE /* CadastroViewController.swift in Sources */,
 				EC40CF181B76AC3F0002C7FC /* AT1ExerciseTableViewController.swift in Sources */,
 				EC9926E61B73A16E0056C733 /* MM1ExerciseExtension.swift in Sources */,
 				EC0F67E71B863F7200A23F24 /* LN1ExerciseViewController.swift in Sources */,
