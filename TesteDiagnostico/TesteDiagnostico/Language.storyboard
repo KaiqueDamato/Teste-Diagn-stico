@@ -33,51 +33,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLK-9r-Mxb" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="105" y="268" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="96" y="183" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="yAN-A3-gvd"/>
-                                    <constraint firstAttribute="width" constant="60" id="zqw-uy-jFY"/>
+                                    <constraint firstAttribute="height" constant="100" id="yAN-A3-gvd"/>
+                                    <constraint firstAttribute="width" constant="100" id="zqw-uy-jFY"/>
                                 </constraints>
                                 <state key="normal" image="speaker">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="textToSpeech:" destination="yIg-Qu-fXk" eventType="touchUpInside" id="FzZ-VE-cYY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD6-XT-A7j" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="167" y="352" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="3W1-pi-XeW"/>
-                                    <constraint firstAttribute="height" constant="60" id="zAc-LW-Ndg"/>
-                                </constraints>
-                                <state key="normal" image="wrong">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="firstAnswer:" destination="yIg-Qu-fXk" eventType="touchUpInside" id="syH-Cc-xm8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrJ-ny-Tck" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="343" y="352" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="354" y="352" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="d7P-MQ-WED"/>
                                     <constraint firstAttribute="width" constant="60" id="kRg-vi-9wq"/>
                                 </constraints>
-                                <state key="normal" image="correct">
+                                <state key="normal" image="yeap22">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -90,18 +71,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-fU-fyn" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="413" y="270" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="405" y="183" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="758-8e-SqO"/>
-                                    <constraint firstAttribute="height" constant="60" id="cJd-8s-WSZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="758-8e-SqO"/>
+                                    <constraint firstAttribute="height" constant="100" id="cJd-8s-WSZ"/>
                                 </constraints>
                                 <state key="normal" image="speaker">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -109,13 +90,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyr-mO-5nL" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="34" y="352" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="50" y="352" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="eo3-wK-l9c"/>
                                     <constraint firstAttribute="height" constant="60" id="ucK-tb-xhj"/>
                                 </constraints>
-                                <state key="normal" image="correct">
+                                <state key="normal" image="yeap22">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -128,13 +109,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPc-I4-y0p" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
-                                <rect key="frame" x="485" y="352" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.5568627451" green="0.7843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="496" y="352" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Lts-TR-ckA"/>
                                     <constraint firstAttribute="height" constant="60" id="lhB-hJ-MOO"/>
                                 </constraints>
-                                <state key="normal" image="wrong">
+                                <state key="normal" image="naop22">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -146,19 +127,38 @@
                                     <action selector="secondAnswer:" destination="yIg-Qu-fXk" eventType="touchUpInside" id="Mg5-jL-tJw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD6-XT-A7j" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="183" y="352" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.25554342829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3W1-pi-XeW"/>
+                                    <constraint firstAttribute="height" constant="60" id="zAc-LW-Ndg"/>
+                                </constraints>
+                                <state key="normal" image="naop22">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="firstAnswer:" destination="yIg-Qu-fXk" eventType="touchUpInside" id="syH-Cc-xm8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Fyr-mO-5nL" secondAttribute="centerX" constant="236" id="6H8-da-dyV"/>
-                            <constraint firstAttribute="centerX" secondItem="SLK-9r-Mxb" secondAttribute="centerX" constant="165" id="B8k-S6-TOL"/>
-                            <constraint firstAttribute="centerY" secondItem="SLK-9r-Mxb" secondAttribute="centerY" constant="2" id="CeL-YQ-0w4"/>
-                            <constraint firstAttribute="centerX" secondItem="qb4-fU-fyn" secondAttribute="centerX" constant="-143" id="D5O-4n-92c"/>
-                            <constraint firstAttribute="centerY" secondItem="qb4-fU-fyn" secondAttribute="centerY" id="N4W-UH-OWT"/>
+                            <constraint firstAttribute="centerX" secondItem="Fyr-mO-5nL" secondAttribute="centerX" constant="220" id="6H8-da-dyV"/>
+                            <constraint firstAttribute="centerX" secondItem="SLK-9r-Mxb" secondAttribute="centerX" constant="154" id="B8k-S6-TOL"/>
+                            <constraint firstAttribute="centerY" secondItem="SLK-9r-Mxb" secondAttribute="centerY" constant="67" id="CeL-YQ-0w4"/>
+                            <constraint firstAttribute="centerX" secondItem="qb4-fU-fyn" secondAttribute="centerX" constant="-155" id="D5O-4n-92c"/>
+                            <constraint firstAttribute="centerY" secondItem="qb4-fU-fyn" secondAttribute="centerY" constant="67" id="N4W-UH-OWT"/>
                             <constraint firstAttribute="centerY" secondItem="ZD6-XT-A7j" secondAttribute="centerY" constant="-82" id="OmL-O4-wwH"/>
-                            <constraint firstAttribute="centerX" secondItem="ZD6-XT-A7j" secondAttribute="centerX" constant="103" id="Vm3-T5-44d"/>
-                            <constraint firstAttribute="centerX" secondItem="xrJ-ny-Tck" secondAttribute="centerX" constant="-73" id="cBt-X7-hkE"/>
+                            <constraint firstAttribute="centerX" secondItem="ZD6-XT-A7j" secondAttribute="centerX" constant="87" id="Vm3-T5-44d"/>
+                            <constraint firstAttribute="centerX" secondItem="xrJ-ny-Tck" secondAttribute="centerX" constant="-84" id="cBt-X7-hkE"/>
                             <constraint firstAttribute="centerY" secondItem="xrJ-ny-Tck" secondAttribute="centerY" constant="-82" id="eot-2p-MDn"/>
-                            <constraint firstAttribute="centerX" secondItem="lPc-I4-y0p" secondAttribute="centerX" constant="-215" id="haI-5J-fpY"/>
+                            <constraint firstAttribute="centerX" secondItem="lPc-I4-y0p" secondAttribute="centerX" constant="-226" id="haI-5J-fpY"/>
                             <constraint firstAttribute="centerX" secondItem="Fyr-mO-5nL" secondAttribute="centerX" id="idT-UZ-pOp"/>
                             <constraint firstAttribute="centerY" secondItem="Fyr-mO-5nL" secondAttribute="centerY" constant="-82" id="lUq-ld-cPr"/>
                             <constraint firstAttribute="centerY" secondItem="Fyr-mO-5nL" secondAttribute="centerY" id="uFE-Ag-o3m"/>
@@ -187,8 +187,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="correct" width="26" height="26"/>
+        <image name="naop22" width="22" height="22"/>
         <image name="speaker" width="26" height="26"/>
-        <image name="wrong" width="26" height="26"/>
+        <image name="yeap22" width="22" height="22"/>
     </resources>
 </document>
