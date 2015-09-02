@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AhL-eB-z2r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Naming View Controller-->
@@ -64,11 +65,22 @@
                                     <action selector="rightAnswer" destination="AhL-eB-z2r" eventType="touchUpInside" id="pmO-l0-RUX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oB-0o-GOR">
-                                <rect key="frame" x="277" y="522" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oB-0o-GOR" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="8" y="492" width="584" height="100"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hyK-Xf-fzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Próximo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextExercise" destination="AhL-eB-z2r" eventType="touchUpInside" id="1Ta-60-EBY"/>
                                 </connections>
@@ -78,14 +90,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="IdL-jT-Fup" secondAttribute="centerX" id="5Vq-uA-LTE"/>
+                            <constraint firstItem="7oB-0o-GOR" firstAttribute="leading" secondItem="Mfu-G1-A9Z" secondAttribute="leadingMargin" constant="-8" id="EhG-jJ-p4g"/>
                             <constraint firstAttribute="centerY" secondItem="IdL-jT-Fup" secondAttribute="centerY" constant="168" id="Ima-Cr-rad"/>
                             <constraint firstAttribute="centerX" secondItem="ymy-xV-XvP" secondAttribute="centerX" constant="138" id="O4E-sw-XTg"/>
                             <constraint firstAttribute="centerY" secondItem="NpR-TP-Q5l" secondAttribute="centerY" constant="-104" id="Rhu-Hf-zZh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7oB-0o-GOR" secondAttribute="trailing" constant="-8" id="h0h-tp-oIJ"/>
                             <constraint firstAttribute="centerY" secondItem="ymy-xV-XvP" secondAttribute="centerY" constant="-104" id="n4T-wx-iVk"/>
+                            <constraint firstItem="WUz-xI-24j" firstAttribute="top" secondItem="7oB-0o-GOR" secondAttribute="bottom" constant="8" id="svX-Yx-jYO"/>
                             <constraint firstAttribute="centerX" secondItem="7oB-0o-GOR" secondAttribute="centerX" id="ufD-CB-e3u"/>
                             <constraint firstAttribute="centerX" secondItem="NpR-TP-Q5l" secondAttribute="centerX" constant="-138" id="urr-RC-85m"/>
                             <constraint firstAttribute="centerY" secondItem="7oB-0o-GOR" secondAttribute="centerY" constant="-237" id="xW0-s8-wvP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xW0-s8-wvP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="animalImageView" destination="IdL-jT-Fup" id="1mb-Gp-s9u"/>

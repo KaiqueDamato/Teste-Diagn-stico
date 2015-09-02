@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cyw-6R-iKK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,11 +25,22 @@
                                     <outletCollection property="gestureRecognizers" destination="IvU-t9-oTH" appends="YES" id="bRf-xp-elK"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-IS-MDG">
-                                <rect key="frame" x="277" y="550" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-IS-MDG" customClass="KPButton" customModule="TesteDiagnostico" customModuleProvider="target">
+                                <rect key="frame" x="8" y="492" width="584" height="100"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.5568627451" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8jc-3t-KMr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Próximo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextExercise" destination="cyw-6R-iKK" eventType="touchUpInside" id="SKL-cA-LJ8"/>
                                 </connections>
@@ -38,11 +50,19 @@
                         <constraints>
                             <constraint firstItem="GdH-QC-Cih" firstAttribute="top" secondItem="c1X-40-cug" secondAttribute="top" id="254-Rt-v6S"/>
                             <constraint firstItem="GdH-QC-Cih" firstAttribute="leading" secondItem="c1X-40-cug" secondAttribute="leading" id="4H7-y3-EKl"/>
+                            <constraint firstItem="5b8-Oi-CU8" firstAttribute="top" secondItem="rwK-IS-MDG" secondAttribute="bottom" constant="8" id="5vF-WR-a3L"/>
                             <constraint firstAttribute="centerY" secondItem="rwK-IS-MDG" secondAttribute="centerY" constant="-265" id="F4M-LQ-tVr"/>
+                            <constraint firstItem="rwK-IS-MDG" firstAttribute="leading" secondItem="c1X-40-cug" secondAttribute="leadingMargin" constant="-8" id="XTQ-ab-yor"/>
                             <constraint firstAttribute="trailing" secondItem="GdH-QC-Cih" secondAttribute="trailing" id="Z9I-xY-dEL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rwK-IS-MDG" secondAttribute="trailing" constant="-8" id="hD6-ni-3yY"/>
                             <constraint firstAttribute="centerX" secondItem="rwK-IS-MDG" secondAttribute="centerX" id="lqi-Dt-OHZ"/>
                             <constraint firstItem="5b8-Oi-CU8" firstAttribute="top" secondItem="GdH-QC-Cih" secondAttribute="bottom" constant="135" id="pM3-qL-F1i"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F4M-LQ-tVr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="exerciseView" destination="GdH-QC-Cih" id="gy5-Pf-Q0n"/>
